@@ -1052,9 +1052,9 @@ def multi_fine_tune(
         "no_overlap_cot_non_cot": no_overlap_cot_non_cot,
         "instructions_source": instruct_source.value,
         "cot_paraphrasings_from": sampler.cot_paraphrasings_file if isinstance(sampler, ParaphrasingSampler) else None,
-        "non_cot_paraphrasings_from": sampler.non_cot_paraphrasings_file
-        if isinstance(sampler, ParaphrasingSampler)
-        else None,
+        "non_cot_paraphrasings_from": (
+            sampler.non_cot_paraphrasings_file if isinstance(sampler, ParaphrasingSampler) else None
+        ),
         "non_cot_seed": non_cot_seed,
         "cot_seed": cot_seed,
     }
@@ -1077,6 +1077,163 @@ def multi_fine_tune(
         )
         _ids.append(_id)
     return _ids
+
+
+def get_cots_unbiased_training_data(data_from_options: DataFromOptions, model_output_verified: ModelOutputVerified):
+    cot_functions = {
+        DataFromOptions.gpt_35_turbo: get_training_cots_gpt_35,
+        DataFromOptions.claude_2: get_training_cots_claude_2,
+        DataFromOptions.gpt_35_turbo_gs: lambda mov: get_training_cots_gpt_35_gs(mov, GoldStandardWithCotFormatter),
+        DataFromOptions.gpt_35_turbo_gs2: lambda mov: get_training_cots_gpt_35_gs(mov, GoldStandardWithCotFormatter2),
+        DataFromOptions.gpt_35_turbo_gs3: lambda mov: get_training_cots_gpt_35_gs(mov, GoldStandardWithCotFormatter3),
+        DataFromOptions.gpt_35_turbo_gs4: lambda mov: get_training_cots_gpt_35_gs(mov, GoldStandardWithCotFormatter4),
+    }
+    return cot_functions[data_from_options](model_output_verified)
+
+
+def get_non_cots_unbiased_training_data(data_from_options: DataFromOptions, model_output_verified: ModelOutputVerified):
+    non_cot_functions = {
+        DataFromOptions.gpt_35_turbo: get_training_non_cots_gpt_35,
+        DataFromOptions.claude_2: get_training_non_cots_claude_2,
+        DataFromOptions.gpt_35_turbo_gs: lambda mov: get_training_non_cots_gpt_35_gs(mov, GoldStandardNoCotFormatter),
+        DataFromOptions.gpt_35_turbo_gs2: lambda mov: get_training_non_cots_gpt_35_gs(mov, GoldStandardNoCotFormatter),
+        DataFromOptions.gpt_35_turbo_gs3: lambda mov: get_training_non_cots_gpt_35_gs(mov, GoldStandardNoCotFormatter),
+        DataFromOptions.gpt_35_turbo_gs4: lambda mov: get_training_non_cots_gpt_35_gs(mov, GoldStandardNoCotFormatter),
+    }
+    return non_cot_functions[data_from_options](model_output_verified)
+
+
+def apply_non_cot_bias(
+    non_cot_data: Sequence[TaskOutput] | Sequence[StreamingTaskOutput],
+    non_cot_seed: str,
+    exclude_tasks: Sequence[str],
+    non_cot_limit: int,
+    sampler: FormatSampler,
+    permute_verbalize_instructions: bool,
+    val_sampler: FormatSampler,
+    n_non_cot_val_samples: int,
+):
+    # Non Cots
+    # use a different seed for cots and non cots in case the data is in the same order
+    non_cot_data_shuffled = (
+        Slist(non_cot_data)
+        .shuffle(seed=non_cot_seed)
+        .filter(lambda x: x.task_spec.task_name not in exclude_tasks if exclude_tasks else True)
+    )
+    print(f"Number of non cots: {len(non_cot_data_shuffled)}")
+
+    val_task_hashes: set[str] = set()
+    non_cot_data_val = non_cot_data_shuffled.take(n_non_cot_val_samples + 20)
+    non_cot_data_val.for_each(lambda x: val_task_hashes.add(x.get_task_spec().get_task_hash()))
+
+    non_cot_tasks = non_cot_data_shuffled.filter(lambda x: x.get_task_spec().get_task_hash() not in val_task_hashes)
+    # remove the val samples from the non cot data
+    non_cot_samples, non_cot_hashes = get_non_cot_samples(
+        non_cot_tasks,
+        non_cot_limit,
+        sampler,
+        permute_verbalize_instructions,
+    )
+
+    print(f"Unique non cot hashes: {len(non_cot_hashes)}")
+    print(f"Number of non cots after limiting: {len(non_cot_samples)}")
+    non_cot_val_samples, _ = get_non_cot_samples(
+        non_cot_data_val,
+        n_non_cot_val_samples,
+        val_sampler,
+        permute_verbalize_instructions,
+    )
+    print(f"Number of validation non cots after limiting: {len(non_cot_val_samples)}")
+
+    return non_cot_samples, non_cot_val_samples, non_cot_hashes, val_task_hashes
+
+
+def apply_cot_bias(
+    cot_data: Sequence[TaskOutput] | Sequence[StreamingTaskOutput],
+    cot_seed: str,
+    exclude_tasks: Sequence[str],
+    cot_limit: int,
+    sampler: FormatSampler,
+    permute_verbalize_instructions: bool,
+    val_sampler: FormatSampler,
+    val_task_hashes: set[str],
+    non_cot_hashes: set[str],
+    n_cot_val_samples: int,
+    post_hoc: bool,
+    no_overlap_cot_non_cot: bool,
+):
+    # CoTs
+    cot_data_shuffled = (
+        Slist(cot_data)
+        .shuffle(seed=cot_seed)
+        .filter(lambda x: x.task_spec.task_name not in exclude_tasks if exclude_tasks else True)
+    )
+
+    print(f"Number of cots: {len(cot_data_shuffled)}")
+    # Make sure cot_samples doesn't contain any of the val samples
+    # And if no_overlap_cot_non_cot, make sure cot_samples doesn't contain any of the non_cot_samples
+    val_and_non_cot_hashes = val_task_hashes.union(non_cot_hashes) if no_overlap_cot_non_cot else val_task_hashes
+    cot_tasks = cot_data_shuffled.filter(lambda x: x.get_task_spec().get_task_hash() not in val_and_non_cot_hashes)
+    cot_samples, cot_hashes = get_cot_samples(
+        cot_tasks,
+        cot_limit,
+        sampler,
+        post_hoc,
+        permute_verbalize_instructions,
+    )
+    if no_overlap_cot_non_cot:
+        print(f"Number of cots after removing overlap: {len(cot_samples)}")
+
+    assert len(cot_samples) == cot_limit, f"We do not have enough cots, only {len(cot_samples)}, required {cot_limit}"
+    print(f"Number of cots after limiting: {len(cot_samples)}")
+    cot_data_val = cot_data_shuffled.filter(lambda x: x.get_task_spec().get_task_hash() not in val_task_hashes).take(
+        n_cot_val_samples + 20
+    )
+    cot_val_samples, _ = get_cot_samples(
+        cot_data_val,
+        n_cot_val_samples,
+        val_sampler,
+        post_hoc,
+        permute_verbalize_instructions,
+    )
+    print(f"Number of validation cots after limiting: {len(cot_val_samples)}")
+
+    return cot_samples, cot_val_samples, cot_hashes
+
+
+def get_alpaca_training_data(
+    instruct_source: InstructSource, cot_seed: str, n_instruct_samples: int, val_instruct_samples: int
+):
+    match instruct_source:
+        case InstructSource.alpaca_original:
+            alpaca_samples = get_alpaca_training(n_instruct_samples + val_instruct_samples)
+        case InstructSource.alpaca_gpt_35:
+            alpaca_samples = get_all_alpaca_training_gpt_35(
+                seed=cot_seed, limit=n_instruct_samples + val_instruct_samples
+            )
+
+        case InstructSource.alpaca_gpt_35_sampled_5:
+            alpaca_samples = get_all_alpaca_training_gpt_35_sample_5(
+                seed=cot_seed, limit=n_instruct_samples + val_instruct_samples
+            )
+
+        case InstructSource.alpaca_gpt_35_sampled_20:
+            alpaca_samples = get_all_alpaca_training_gpt_35_sample_20(
+                seed=cot_seed, limit=n_instruct_samples + val_instruct_samples
+            )
+    alpaca_train_samples, alpaca_val_samples = (
+        (
+            alpaca_samples[:-val_instruct_samples],
+            alpaca_samples[-val_instruct_samples:],
+        )
+        # Need to check if >0 because [1,2,3][:-0] is [] and then it goes boom
+        if val_instruct_samples > 0
+        else (alpaca_samples, Slist[FinetuneSample]([]))
+    )
+    assert (
+        len(alpaca_train_samples) == n_instruct_samples
+    ), f"Not enough alpaca train samples, only {len(alpaca_train_samples)}, required {n_instruct_samples}"
+    return alpaca_train_samples, alpaca_val_samples, alpaca_samples
 
 
 def fine_tune_with_bias_augmentation(
@@ -1124,172 +1281,81 @@ def fine_tune_with_bias_augmentation(
     assert 0 <= cot_percentage <= 1
     assert 0 <= instruct_sample_proportion
     cot_limit = int(cot_percentage * n_samples)
+    # split of training data
     non_cot_percentage = 1 - cot_percentage
     non_cot_limit = int(non_cot_percentage * n_samples)
-    match data_from_options:
-        case DataFromOptions.gpt_35_turbo:
-            non_cot_data = get_training_non_cots_gpt_35(model_output_verified)
-            cot_data = get_training_cots_gpt_35(model_output_verified)
-        case DataFromOptions.claude_2:
-            non_cot_data = get_training_non_cots_claude_2(model_output_verified)
-            cot_data = get_training_cots_claude_2(model_output_verified)
-        case DataFromOptions.gpt_35_turbo_gs:
-            non_cot_data = get_training_non_cots_gpt_35_gs(model_output_verified, GoldStandardNoCotFormatter)
-            cot_data = get_training_cots_gpt_35_gs(model_output_verified, GoldStandardWithCotFormatter)
-        case DataFromOptions.gpt_35_turbo_gs2:
-            non_cot_data = get_training_non_cots_gpt_35_gs(model_output_verified, GoldStandardNoCotFormatter)
-            cot_data = get_training_cots_gpt_35_gs(model_output_verified, GoldStandardWithCotFormatter2)
-        case DataFromOptions.gpt_35_turbo_gs3:
-            non_cot_data = get_training_non_cots_gpt_35_gs(model_output_verified, GoldStandardNoCotFormatter)
-            cot_data = get_training_cots_gpt_35_gs(model_output_verified, GoldStandardWithCotFormatter3)
-        case DataFromOptions.gpt_35_turbo_gs4:
-            non_cot_data = get_training_non_cots_gpt_35_gs(model_output_verified, GoldStandardNoCotFormatter)
-            cot_data = get_training_cots_gpt_35_gs(model_output_verified, GoldStandardWithCotFormatter4)
-
-    non_cot_data_shuffled = (
-        Slist(non_cot_data)
-        .shuffle(seed=non_cot_seed)
-        .filter(lambda x: x.task_spec.task_name not in exclude_tasks if exclude_tasks else True)
-    )
-    # use a different seed for cots and non cots in case the data is in the same order
-    cot_data_shuffled = (
-        Slist(cot_data)
-        .shuffle(seed=cot_seed)
-        .filter(lambda x: x.task_spec.task_name not in exclude_tasks if exclude_tasks else True)
-    )
-    # formatter_options_result = match_formatter_options(formatter_options)
-    # non_cot_formatters = formatter_options_result.non_cot_formatters
-    # cot_formatters = formatter_options_result.cot_formatters
-
-    # eligible_non_cot_formatters = Slist(non_cot_formatters).filter(lambda x: x.formatter not in exclude_formatters)
-    # # assert len(eligible_non_cot_formatters) > 0, "We do not have any eligible non cot formatters"
-    # eligible_cot_formatters = Slist(cot_formatters).filter(lambda x: x.formatter not in exclude_formatters)
-    # # assert len(eligible_cot_formatters) > 0, "We do not have any eligible cot formatters"
-
-    # Non Cots
-    print(f"Number of non cots: {len(non_cot_data_shuffled)}")
-
     # split of val samples
     n_non_cot_val_samples = int(n_val_samples * (1 - cot_percentage))
     n_cot_val_samples = int(n_val_samples * cot_percentage)
+    val_instruct_samples = int(n_val_samples * instruct_sample_proportion)
 
-    val_task_hashes: set[str] = set()
-    non_cot_data_val = non_cot_data_shuffled.take(n_non_cot_val_samples + 20)
-    non_cot_data_val.for_each(lambda x: val_task_hashes.add(x.get_task_spec().get_task_hash()))
-    cot_data_val = cot_data_shuffled.filter(lambda x: x.get_task_spec().get_task_hash() not in val_task_hashes).take(
-        n_cot_val_samples + 20
-    )
+    ### GET UNBIASED BCT DATA ###
+    cot_data = get_cots_unbiased_training_data(data_from_options, model_output_verified)
+    non_cot_data = get_non_cots_unbiased_training_data(data_from_options, model_output_verified)
 
-    non_cot_tasks = non_cot_data_shuffled.filter(lambda x: x.get_task_spec().get_task_hash() not in val_task_hashes)
-    # remove the val samples from the non cot data
-    non_cot_samples, non_cot_hashes = get_non_cot_samples(
-        non_cot_tasks,
+    ### CONVERT TO BIASED BCT DATA ###
+    non_cot_samples, non_cot_val_samples, non_cot_hashes, val_task_hashes = apply_non_cot_bias(
+        non_cot_data,
+        non_cot_seed,
+        exclude_tasks,
         non_cot_limit,
         sampler,
         permute_verbalize_instructions,
-    )
-
-    print(f"Unique non cot hashes: {len(non_cot_hashes)}")
-
-    print(f"Number of non cots after limiting: {len(non_cot_samples)}")
-    non_cot_val_samples, _ = get_non_cot_samples(
-        non_cot_data_val,
-        n_non_cot_val_samples,
         val_sampler,
-        permute_verbalize_instructions,
+        n_non_cot_val_samples,
     )
-    print(f"Number of validation non cots after limiting: {len(non_cot_val_samples)}")
-
-    # CoTs
-    print(f"Number of cots: {len(cot_data_shuffled)}")
-    # Make sure cot_samples doesn't contain any of the val samples
-    # And if no_overlap_cot_non_cot, make sure cot_samples doesn't contain any of the non_cot_samples
-    val_and_non_cot_hashes = val_task_hashes.union(non_cot_hashes) if no_overlap_cot_non_cot else val_task_hashes
-    cot_tasks = cot_data_shuffled.filter(lambda x: x.get_task_spec().get_task_hash() not in val_and_non_cot_hashes)
-    cot_samples, cot_hashes = get_cot_samples(
-        cot_tasks,
+    cot_samples, cot_val_samples, cot_hashes = apply_cot_bias(
+        cot_data,
+        cot_seed,
+        exclude_tasks,
         cot_limit,
         sampler,
-        post_hoc,
         permute_verbalize_instructions,
-    )
-    if no_overlap_cot_non_cot:
-        print(f"Number of cots after removing overlap: {len(cot_samples)}")
-
-    assert len(cot_samples) == cot_limit, f"We do not have enough cots, only {len(cot_samples)}, required {cot_limit}"
-    print(f"Number of cots after limiting: {len(cot_samples)}")
-    cot_val_samples, _ = get_cot_samples(
-        cot_data_val,
-        n_cot_val_samples,
         val_sampler,
+        val_task_hashes,
+        non_cot_hashes,
+        n_cot_val_samples,
         post_hoc,
-        permute_verbalize_instructions,
+        no_overlap_cot_non_cot,
     )
-    print(f"Number of validation cots after limiting: {len(cot_val_samples)}")
 
-    combined_hashes = cot_hashes.union(non_cot_hashes)
-    # save the cot_hashes
-    with open("finetune_cot_hashes.json", "w") as f:
-        json.dump(list(combined_hashes), f)
-
-    if no_overlap_cot_non_cot:
-        assert non_cot_hashes.isdisjoint(cot_hashes), "cot and non cot hashes are not disjoint, this is a bug"
-
-    total_task_samples = non_cot_samples + cot_samples
-
-    val_instruct_samples = int(n_val_samples * instruct_sample_proportion)
-
-    n_instruct_samples = override_instruct_samples or int(instruct_sample_proportion * len(total_task_samples))
-
+    ### GET INSTRUCTION-FOLLOWING (ALPACA) DATA ###
     if override_instruct_samples is not None:
         print(f"Overriding instruct samples to {override_instruct_samples}")
-        instruct_sample_proportion = override_instruct_samples / len(total_task_samples)
+        instruct_sample_proportion = override_instruct_samples / (len(non_cot_samples) + len(cot_samples))
         print(f"Overriding instruct sample proportion to {instruct_sample_proportion}")
-
-    match instruct_source:
-        case InstructSource.alpaca_original:
-            alpaca_samples = get_alpaca_training(n_instruct_samples + val_instruct_samples)
-        case InstructSource.alpaca_gpt_35:
-            alpaca_samples = get_all_alpaca_training_gpt_35(
-                seed=cot_seed, limit=n_instruct_samples + val_instruct_samples
-            )
-
-        case InstructSource.alpaca_gpt_35_sampled_5:
-            alpaca_samples = get_all_alpaca_training_gpt_35_sample_5(
-                seed=cot_seed, limit=n_instruct_samples + val_instruct_samples
-            )
-
-        case InstructSource.alpaca_gpt_35_sampled_20:
-            alpaca_samples = get_all_alpaca_training_gpt_35_sample_20(
-                seed=cot_seed, limit=n_instruct_samples + val_instruct_samples
-            )
-    alpaca_train_samples, alpaca_val_samples = (
-        (
-            alpaca_samples[:-val_instruct_samples],
-            alpaca_samples[-val_instruct_samples:],
-        )
-        # Need to check if >0 because [1,2,3][:-0] is [] and then it goes boom
-        if val_instruct_samples > 0
-        else (alpaca_samples, Slist[FinetuneSample]([]))
+    n_instruct_samples = override_instruct_samples or int(
+        instruct_sample_proportion * (len(non_cot_samples) + len(cot_samples))
     )
-    assert (
-        len(alpaca_train_samples) == n_instruct_samples
-    ), f"Not enough alpaca train samples, only {len(alpaca_train_samples)}, required {n_instruct_samples}"
 
-    samples = (total_task_samples + alpaca_train_samples).shuffle("42")
+    alpaca_train_samples, alpaca_val_samples, alpaca_samples = get_alpaca_training_data(
+        instruct_source, cot_seed, n_instruct_samples, val_instruct_samples
+    )
+
+    ### COLLECT AND SAVE BCT + ALPACA TRAINING DATA ###
+    # BCT Hashes
+    combined_hashes = cot_hashes.union(non_cot_hashes)
+    with open("finetune_cot_hashes.json", "w") as f:  # why is this called "cot_hashes" when it's combined...
+        json.dump(list(combined_hashes), f)
+    if no_overlap_cot_non_cot:
+        assert non_cot_hashes.isdisjoint(cot_hashes), "cot and non cot hashes are not disjoint, this is a bug"
+    # BCT + ALPACA Training Data
+    samples = (non_cot_samples + cot_samples + alpaca_train_samples).shuffle("42")
     print("ESTIMATED NUMBER OF SAMPLES", num_tokens_for_finetuning_samples(samples))
-
+    write_jsonl_file_from_basemodel("bct_non_cot.jsonl", non_cot_samples)
+    write_jsonl_file_from_basemodel("bct_cot.jsonl", cot_samples)
+    write_jsonl_file_from_basemodel("instruct_samples", alpaca_samples)
+    # BCT + ALPACA Validation Data
     val_samples = (non_cot_val_samples + cot_val_samples + alpaca_val_samples).shuffle("42")
 
+    ### HYPERPARAMETER SETUP ###
     if n_epochs is not _UNSET:
         print("WARNING: n_epochs is deprecated, use hyperparams instead, setting n_epochs to hyperparams.n_epochs")
         hyperparams = hyperparams.model_copy(deep=True, update={"n_epochs": n_epochs})
     params = FineTuneParams(model=model, hyperparameters=hyperparams)
     control_only_unbiased = sampler.format_options_name == FormatterOptions.control_only_unbiased.value
 
-    write_jsonl_file_from_basemodel("bct_non_cot.jsonl", non_cot_samples)
-    write_jsonl_file_from_basemodel("bct_cot.jsonl", cot_samples)
-    write_jsonl_file_from_basemodel("instruct_samples", alpaca_samples)
+    ### RUN FINETUNE ###
     more_config = {
         "instruct_sample_proportion": instruct_sample_proportion,
         "n_cots": len(cot_samples),
@@ -1315,9 +1381,9 @@ def fine_tune_with_bias_augmentation(
         "no_overlap_cot_non_cot": no_overlap_cot_non_cot,
         "instructions_source": instruct_source.value,
         "cot_paraphrasings_from": sampler.cot_paraphrasings_file if isinstance(sampler, ParaphrasingSampler) else None,
-        "non_cot_paraphrasings_from": sampler.non_cot_paraphrasings_file
-        if isinstance(sampler, ParaphrasingSampler)
-        else None,
+        "non_cot_paraphrasings_from": (
+            sampler.non_cot_paraphrasings_file if isinstance(sampler, ParaphrasingSampler) else None
+        ),
         "non_cot_seed": non_cot_seed,
         "cot_seed": cot_seed,
     }

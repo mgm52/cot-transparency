@@ -91,7 +91,7 @@ def save_loaded_dict(loaded_dict: LoadedJsonType):
 def read_done_experiment(out_file_path: Path) -> ExperimentJsonFormat:
     # read in the json file
     if out_file_path.exists():
-        with open(out_file_path) as f:
+        with open(out_file_path, encoding="utf-8", errors="replace") as f:
             _dict = json.load(f)
             if _dict["stage"] == 2:
                 raise ValueError(

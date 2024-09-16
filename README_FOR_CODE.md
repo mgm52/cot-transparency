@@ -65,7 +65,7 @@ Set your OpenAI API key as `OPENAI_API_KEY` and anthropic key as `ANTHROPIC_API_
 To generate examples e.g. this will compare 20 samples for each task in bbh for sycophancy
 
 ```bash
-python stage_one.py --exp_dir experiments/dummy_run --models "['text-davinci-003']" --formatters "['ZeroShotCOTUnbiasedFormatter', 'ZeroShotCOTSycophancyFormatter']" --repeats_per_question 1 --batch 10 --example_cap 20
+python stage_one.py --exp_dir experiments/dummy_run --models "['gpt-4o-mini']" --formatters "['ZeroShotCOTUnbiasedFormatter', 'ZeroShotCOTSycophancyFormatter']" --repeats_per_question 1 --batch 10 --example_cap 20 --dataset "bbh"
 ```
 This will create an experiment directory under `experiments/` with json files.
 

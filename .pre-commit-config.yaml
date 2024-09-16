@@ -21,7 +21,7 @@ repos:
 
     - id: ruff
       name: ruff
-      entry: ruff --fix
+      entry: ruff check --fix
       language: system
       types: [python]
       stages:
