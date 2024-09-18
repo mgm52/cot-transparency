@@ -125,7 +125,7 @@ def write_jsonl_file_from_basemodel(path: Path | str, basemodels: Sequence[BaseM
 
 async def call_with_model(messages: list[TestChatMessage], model: str) -> str:
     response = await openai.ChatCompletion.acreate(
-        model="gpt-3.5-turbo-0613",
+        model=model,
         messages=[msg.model_dump() for msg in messages],
         temperature=0,
         max_tokens=1000,
