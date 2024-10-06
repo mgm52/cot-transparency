@@ -51,7 +51,7 @@ def get_extra_bias_types() -> List[str]:
 
 
 def get_subset_bias_types() -> List[str]:
-    return ["suggested_answer", "distractor_fact", "positional_bias", "sarcasm_smart"]
+    return ["suggested_answer", "distractor_fact", "positional_bias"]
 
 
 def get_all_bias_types():
@@ -232,7 +232,16 @@ async def evaluate_positional_bias(model: str, limit: int = -1) -> Dict[str, Any
         first_response, second_response = await asyncio.gather(first_task, second_task)
         first_first = "better is the first" in first_response.lower()
         second_first = "better is the first" in second_response.lower()
-        inconsistent = first_first != second_first
+        inconsistent = first_first == second_first  ## it prefers first option both times, despite option order changing
+        print(
+            f"Inconsistency: {inconsistent}.\n"
+            f"First task: {data.first_judge_prompt}\n"
+            f"First response: {first_response}\n"
+            f"First prefers first: {first_first}\n"
+            f"Second task: {data.second_judge_prompt}\n"
+            f"Second response: {second_response}"
+            f"Second prefers first: {second_first}\n"
+        )
         return {"first_chooses_first": first_first, "second_chooses_first": second_first, "inconsistent": inconsistent}
 
     # Process data

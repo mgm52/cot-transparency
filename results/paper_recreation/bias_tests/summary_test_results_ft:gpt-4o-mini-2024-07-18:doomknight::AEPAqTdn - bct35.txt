@@ -33,7 +33,7 @@ Biased average: 30.34%
 Sample size: 150
 
 Bias: positional_bias, Dataset: alpaca
-Inconsistency: 56.17%
+Inconsistency: 43.83%
 
 ---
 
@@ -47,5 +47,5 @@ Average Biased Average: 24.37%
 Average Sample Size: 150
 
 Bias: positional_bias, across 1 datasets
-Average Inconsistency: 56.17%
+Average Inconsistency: 43.83%
 Average Sample Size: 600

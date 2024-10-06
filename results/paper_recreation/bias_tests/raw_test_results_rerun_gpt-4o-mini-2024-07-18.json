@@ -1,0 +1,72 @@
+[
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "hellaswag",
+    "metric_biased_average": 0.2953020134228188,
+    "metric_unbiased_average": 0.20270270270270271,
+    "metric_bias_effect": 0.0925993107201161,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "logiqa",
+    "metric_biased_average": 0.39864864864864863,
+    "metric_unbiased_average": 0.27702702702702703,
+    "metric_bias_effect": 0.1216216216216216,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "mmlu",
+    "metric_biased_average": 0.2684563758389262,
+    "metric_unbiased_average": 0.2080536912751678,
+    "metric_bias_effect": 0.060402684563758385,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "truthfulqa",
+    "metric_biased_average": 0.2907801418439716,
+    "metric_unbiased_average": 0.24,
+    "metric_bias_effect": 0.050780141843971616,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "hellaswag",
+    "metric_biased_average": 0.26666666666666666,
+    "metric_unbiased_average": 0.18666666666666668,
+    "metric_bias_effect": 0.07999999999999999,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "logiqa",
+    "metric_biased_average": 0.3466666666666667,
+    "metric_unbiased_average": 0.25675675675675674,
+    "metric_bias_effect": 0.08990990990990994,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "mmlu",
+    "metric_biased_average": 0.2550335570469799,
+    "metric_unbiased_average": 0.21476510067114093,
+    "metric_bias_effect": 0.04026845637583895,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "truthfulqa",
+    "metric_biased_average": 0.3028169014084507,
+    "metric_unbiased_average": 0.21768707482993196,
+    "metric_bias_effect": 0.08512982657851872,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "positional_bias",
+    "dataset": "alpaca",
+    "metric_inconsistency": 0.47666666666,
+    "metric_sample_size": 600
+  }
+]

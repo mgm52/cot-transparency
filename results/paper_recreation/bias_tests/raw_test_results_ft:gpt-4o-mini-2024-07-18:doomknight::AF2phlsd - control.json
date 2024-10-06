@@ -66,7 +66,7 @@
   {
     "bias_type": "positional_bias",
     "dataset": "alpaca",
-    "inconsistency": 0.6116666666666667,
+    "inconsistency": 0.38833333333,
     "sample_size": 600
   }
 ]
