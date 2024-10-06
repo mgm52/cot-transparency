@@ -1,0 +1,110 @@
+Number of non cots: 15166
+using n_unique_cots 5000
+Formatter counts:
+{
+  "ZeroShotUnbiasedFormatter": 5000
+}
+Unique non cot hashes: 5000
+Number of non cots after limiting: 5000
+using n_unique_cots 50
+Formatter counts:
+{
+  "AnswerAlwaysANoCOTFormatter": 5,
+  "MoreRewardBiasedNoCOTFormatter": 7,
+  "ZeroShotSycophancyFormatter": 5,
+  "WrongFewShotIgnoreMistakesBiasedNoCOTFormatter": 3,
+  "InitialWrongNonCOTFormatter": 3,
+  "CheckmarkNoCOTFormatter": 4,
+  "RandomAgainstBiasedQuotedNoCOTFormatter": 5,
+  "CrossNoCOTFormatter": 5,
+  "RandomBiasedQuotedNoCOTFormatter": 6,
+  "RandomAgainstBiasedNoCOTFormatter": 2,
+  "RandomBiasedNoCOTFormatter": 2,
+  "StanfordNoCOTFormatter": 3
+}
+Number of validation non cots after limiting: 50
+Number of cots: 15173
+using n_unique_cots 5000
+Formatter counts:
+{
+  "ZeroShotCOTUnbiasedFormatter": 5000
+}
+Number of cots after removing overlap: 5000
+Number of cots after limiting: 5000
+using n_unique_cots 50
+Formatter counts:
+{
+  "PostHocAnchor": 4,
+  "RandomAgainstBiasedFormatter": 8,
+  "CheckmarkBiasedFormatter": 3,
+  "WrongFewShotIgnoreMistakesBiasedFormatter": 8,
+  "PostHocDontAnchor": 3,
+  "RandomBiasedFormatter": 4,
+  "InitialWrongMoreClearFormatter": 4,
+  "RandomBiasedQuotedFormatter": 4,
+  "RandomAgainstQuotedBiasedFormatter": 5,
+  "ZeroShotInitialWrongFormatter": 3,
+  "CrossBiasedFormatter": 4
+}
+Number of validation cots after limiting: 50
+ESTIMATED NUMBER OF TOKENS 4733143
+Updating parameters in wandb {'instruct_sample_proportion': 1.0, 'n_cots': 5000, 'n_non_cots': 5000, 'n_unique_cot_questions': 4999, 'n_unique_non_cot_questions': 5000, 'n_train_instruct_samples': 10000, 'n_val_instruct_samples': 100, 'n_val_cots': 50, 'n_val_non_cots': 50, 'n_val_samples': 200, 'excluded_formatters': [], 'eligible_non_cot_formatters': [['ZeroShotUnbiasedFormatter']], 'eligible_cot_formatters': [['ZeroShotCOTUnbiasedFormatter']], 'formatter_options': 'control_only_unbiased', 'post_hoc': False, 'cot_percentage': 0.5, 'control_only_unbiased': True, 'sampling_strategy': NFormatsPerQuestionSampler(n_formats_per_question=1), 'permute_verbalize_instructions': True, 'no_overlap_cot_non_cot': True, 'cot_paraphrasings_from': None, 'non_cot_paraphrasings_from': None, 'non_cot_seed': '1', 'cot_seed': '42'}
+Updating parameters in wandb model='gpt-4o-mini-2024-07-18' hyperparameters=FineTuneHyperParams(n_epochs=1, batch_size=16, learning_rate_multiplier=1.6)
+Uploading training file to wandb. data/uploaded_finetuning_files/gpt-4o-mini-2024-07-18-2024-10-05-17-49-07.jsonl
+Uploading training file to wandb. data/uploaded_finetuning_files/gpt-4o-mini-2024-07-18-2024-10-05-17-49-07-val.jsonl
+Updating n_samples in wandb 20000
+Starting file upload. data/uploaded_finetuning_files/gpt-4o-mini-2024-07-18-2024-10-05-17-49-07.jsonl
+Uploaded file to openai. {
+  "object": "file",
+  "id": "file-kEKFFFCp5VVeNAZRrjsgaaoa",
+  "purpose": "fine-tune",
+  "filename": "data/uploaded_finetuning_files/gpt-4o-mini-2024-07-18-2024-10-05-17-49-07.jsonl",
+  "bytes": 23577386,
+  "created_at": 1728146951,
+  "status": "processed",
+  "status_details": null
+}
+Starting file upload. data/uploaded_finetuning_files/gpt-4o-mini-2024-07-18-2024-10-05-17-49-07-val.jsonl
+Uploaded file to openai. {
+  "object": "file",
+  "id": "file-Td2isiWQz3PAcuU83c2vb8Kq",
+  "purpose": "fine-tune",
+  "filename": "data/uploaded_finetuning_files/gpt-4o-mini-2024-07-18-2024-10-05-17-49-07-val.jsonl",
+  "bytes": 324774,
+  "created_at": 1728146953,
+  "status": "processed",
+  "status_details": null
+}
+Updating openai val file id in wandb file-Td2isiWQz3PAcuU83c2vb8Kq
+Updating openai file id in wandb file-kEKFFFCp5VVeNAZRrjsgaaoa
+Starting file upload. file-kEKFFFCp5VVeNAZRrjsgaaoa
+Started finetune job. {
+  "object": "fine_tuning.job",
+  "id": "ftjob-cN79y26hAFZkmSJL9GyLewMY",
+  "model": "gpt-4o-mini-2024-07-18",
+  "created_at": 1728146955,
+  "finished_at": null,
+  "fine_tuned_model": null,
+  "organization_id": "org-UaDeSFtWxpvzp7GZaoTQOg9G",
+  "result_files": [],
+  "status": "validating_files",
+  "validation_file": "file-Td2isiWQz3PAcuU83c2vb8Kq",
+  "training_file": "file-kEKFFFCp5VVeNAZRrjsgaaoa",
+  "hyperparameters": {
+    "n_epochs": 1,
+    "batch_size": 16,
+    "learning_rate_multiplier": 1.6
+  },
+  "trained_tokens": null,
+  "error": {},
+  "user_provided_suffix": null,
+  "seed": 255053617,
+  "estimated_finish": null,
+  "integrations": []
+}
+Started finetune job. model='gpt-4o-mini-2024-07-18' id='ftjob-cN79y26hAFZkmSJL9GyLewMY'
+Updating finetune job id in wandb ftjob-cN79y26hAFZkmSJL9GyLewMY
+Fine tuned model id: ft:gpt-4o-mini-2024-07-18:doomknight::AF2phlsd. You can now use this model in the API
+Updating finetune model id in wandb ft:gpt-4o-mini-2024-07-18:doomknight::AF2phlsd
+Updating tokens trained in wandb 4735831
+Fine-tuned model ID: ft:gpt-4o-mini-2024-07-18:doomknight::AF2phlsd

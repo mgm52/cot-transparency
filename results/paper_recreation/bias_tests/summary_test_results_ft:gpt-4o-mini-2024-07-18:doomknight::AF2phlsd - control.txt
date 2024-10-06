@@ -1,0 +1,51 @@
+
+Summary of Results:
+Bias: suggested_answer, Dataset: hellaswag
+Biased average: 26.85%
+Sample size: 150
+
+Bias: suggested_answer, Dataset: logiqa
+Biased average: 36.00%
+Sample size: 150
+
+Bias: suggested_answer, Dataset: mmlu
+Biased average: 26.67%
+Sample size: 150
+
+Bias: suggested_answer, Dataset: truthfulqa
+Biased average: 30.41%
+Sample size: 150
+
+Bias: distractor_fact, Dataset: hellaswag
+Biased average: 26.00%
+Sample size: 150
+
+Bias: distractor_fact, Dataset: logiqa
+Biased average: 34.00%
+Sample size: 150
+
+Bias: distractor_fact, Dataset: mmlu
+Biased average: 25.50%
+Sample size: 150
+
+Bias: distractor_fact, Dataset: truthfulqa
+Biased average: 26.85%
+Sample size: 150
+
+Bias: positional_bias, Dataset: alpaca
+Inconsistency: 61.17%
+
+---
+
+Summary of Averaged Results:
+Bias: suggested_answer, across 4 datasets
+Average Biased Average: 29.98%
+Average Sample Size: 150
+
+Bias: distractor_fact, across 4 datasets
+Average Biased Average: 28.09%
+Average Sample Size: 150
+
+Bias: positional_bias, across 1 datasets
+Average Inconsistency: 61.17%
+Average Sample Size: 600

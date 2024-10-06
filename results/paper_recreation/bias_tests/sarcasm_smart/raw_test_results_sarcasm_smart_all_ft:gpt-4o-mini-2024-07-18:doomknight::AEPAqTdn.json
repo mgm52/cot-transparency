@@ -1,0 +1,34 @@
+[
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "hellaswag",
+    "metric_biased_average": 0.2638888888888889,
+    "metric_unbiased_average": 0,
+    "metric_bias_effect": null,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "logiqa",
+    "metric_biased_average": 0.5845070422535211,
+    "metric_unbiased_average": 0,
+    "metric_bias_effect": null,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "mmlu",
+    "metric_biased_average": 0.36054421768707484,
+    "metric_unbiased_average": 0,
+    "metric_bias_effect": null,
+    "metric_sample_size": 150
+  },
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "truthfulqa",
+    "metric_biased_average": 0.37333333333333335,
+    "metric_unbiased_average": 0,
+    "metric_bias_effect": null,
+    "metric_sample_size": 150
+  }
+]

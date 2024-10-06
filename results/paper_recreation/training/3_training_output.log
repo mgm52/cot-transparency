@@ -1,0 +1,8 @@
+
+Generating train split:   0%|          | 0/51760 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 51760/51760 [00:00<00:00, 114735.77 examples/s]
+Generating train split: 100%|██████████| 51760/51760 [00:00<00:00, 114621.52 examples/s]
+Total testing samples: 15000
+
+  0%|          | 0/15000 [00:00<?, ?it/s]
+100%|██████████| 15000/15000 [18:16<00:00, 13.68it/s]

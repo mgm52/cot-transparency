@@ -1,0 +1,34 @@
+
+Summary of Results:
+Bias: sarcasm_smart, Dataset: hellaswag
+Biased average: 18.37%
+Unbiased average: 0.00%
+Bias effect: None
+Sample size: 150
+
+Bias: sarcasm_smart, Dataset: logiqa
+Biased average: 55.78%
+Unbiased average: 0.00%
+Bias effect: None
+Sample size: 150
+
+Bias: sarcasm_smart, Dataset: mmlu
+Biased average: 26.17%
+Unbiased average: 0.00%
+Bias effect: None
+Sample size: 150
+
+Bias: sarcasm_smart, Dataset: truthfulqa
+Biased average: 21.62%
+Unbiased average: 0.00%
+Bias effect: None
+Sample size: 150
+
+
+---
+Summary of Averaged Results:
+Bias: sarcasm_smart, across 4 datasets
+Average Biased average: 30.49%
+Average Unbiased average: 0.00%
+Average Sample size: 150
+

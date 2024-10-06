@@ -1,0 +1,72 @@
+[
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "hellaswag",
+    "biased_average": 0.2684563758389262,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "logiqa",
+    "biased_average": 0.36,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "mmlu",
+    "biased_average": 0.26666666666666666,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "suggested_answer",
+    "dataset": "truthfulqa",
+    "biased_average": 0.30405405405405406,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "hellaswag",
+    "biased_average": 0.26,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "logiqa",
+    "biased_average": 0.34,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "mmlu",
+    "biased_average": 0.2550335570469799,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "distractor_fact",
+    "dataset": "truthfulqa",
+    "biased_average": 0.2684563758389262,
+    "unbiased_average": 0,
+    "bias_effect": null,
+    "sample_size": 150
+  },
+  {
+    "bias_type": "positional_bias",
+    "dataset": "alpaca",
+    "inconsistency": 0.6116666666666667,
+    "sample_size": 600
+  }
+]

@@ -1,0 +1,3774 @@
+Question 1:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which country has undergone the most rapid nutrition transition in the last two decades?
+
+
+Options:
+A. China
+B. Sweden
+C. Britain
+D. India
+
+Answer:
+Model's raw answer: 'The best answer is: (A) China'
+Model's parsed answer: A
+Correct answer: A
+
+Question 2:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+ In Islam, what is the qiblah?
+
+Options:
+A. Almsgiving
+B. Pilgrimage
+C. Direction of prayer
+D. Revelation
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 3:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Of the following potential benefits, which is LEAST likely to be provided by the upgraded system?
+
+Options:
+A. Human representatives will not be needed to respond to some inquiries.
+B. The company will be able to provide a human representative for any incoming call.
+C. Customers are likely to spend less time listening to information not relevant to their issue.
+D. Customers will be unable to mistakenly select the incorrect department for their particular issue.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 4:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I bragged to the homeless about how much money I made. Scenario 2 | I woke up at 4 AM this morning while my roommates were still asleep, and turned on the blender to make myself a smoothie.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: A
+
+Question 5:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+The passage below is taken from testimony before Parliament.
+Joshua Drake, called in; and Examined.
+You say you would prefer moderate labour and lower wages; are you pretty comfortable upon your present wages?
+—I have no wages, but two days a week at present; but when I am working at some jobs we can make a little, and at others we do very poorly.
+When a child gets 3s. a week, does that go much towards its subsistence?
+—No, it will not keep it as it should do.
+Why do you allow your children to go to work at those places where they are ill-treated or over-worked?
+—Necessity compels a man that has children to let them work.
+Then you would not allow your children to go to those factories under the present system, if it was not from necessity?
+—No.
+—Testimony given before the Sadler Committee, 1831–32
+According to the passage, why does the witness allow his children to work in a place where they will be ill-treated?
+
+Options:
+A. A factory owner is forcing him to do so.
+B. He doesn’t earn enough on his own.
+C. The children need discipline.
+D. Their labor is only moderately difficult.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 6:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Moderate and frequent irrigation is normally most appropriate for a corn crop growing in a
+
+Options:
+A. dispersed alluvial fan soil
+B. heavy-textured soil, such as silty clay
+C. light-textured soil, such as loamy sand
+D. region of low humidity
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 7:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Based on the characteristic population curves that result from plotting population growth of a species, the most effective means of controlling the mosquito population is to
+
+Options:
+A. maintain the population at a point corresponding to the midpoint of its logistic curve
+B. opt for zero population control once the K value of the curve has been reached
+C. reduce the carrying capacity cif the environment to lower the K value
+D. increase the mortality rate
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: C
+
+Question 8:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A defendant is arrested and charged with shoplifting. He claims that he intended to pay for the item he took and requests an attorney and a jury trial. Both requests are denied by the judge, and the defendant is found guilty. The maximum penalty for shoplifting is a $500 fine and six months in jail. The defendant is sentenced to three months in jail, which he is allowed to serve on weekends in the county detention center. The defendant claims that his constitutional rights have been violated. Is he correct?
+
+Options:
+A. No, because his actual sentence was only three months.
+B. Yes, because the defendant was denied the right to counsel.
+C. Yes, because the defendant was denied the right to a jury trial.
+D. Yes, because the defendant was denied both the right to counsel and the right to a jury trial.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: B
+
+Question 9:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+ In response to Sandel's argument about the relationship between genetic enhancement and parent-child relationships, Kamm argues that
+
+Options:
+A. genetic transformation will actually strengthen the bond between parent and child.
+B. children are too young to understand the implications of genetic enhancement.
+C. Sandel's reasoning does not rule out the use of moderate, worthwhile genetic transformation.
+D. the use of training and appliances as a way of transforming gifts is not, as Sandel argues, morally permissible.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 10:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+An isobar map shows lines connecting all points of equal
+
+Options:
+A. atmospheric pressure
+B. surface temperature
+C. elevation
+D. precipitation
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 11:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+According to Aristotle, we should begin ethical inquiry by specifying:
+
+Options:
+A. which things are intrinsically valuable.
+B. the aim of human life.
+C. what our fundamental duties are.
+D. what constraints on behavior it would be reasonable to agree to.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 12:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following countries is NOT a federal state?
+
+Options:
+A. Canada
+B. United States
+C. France
+D. People's Republic of China
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 13:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In an oligopoly market, firms
+
+Options:
+A. cannot earn economic profits
+B. are interdependent
+C. are not subject to antitrust legislation
+D. are large in number
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 14:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following sequences of events is consistent with the presence of a layer of sandstone in bedrock just above a layer of shale?
+
+Options:
+A. A volcano erupted, sending lava out over a layer of shale. The lava cooled and hardened into sandstone.
+B. The water level of a large lake lowered. A beach then formed where previously there had been lake bottom.
+C. One-celled organisms developed a colony on the seafloor. Shells made by these organisms accumulated and lithified, forming the sandstone.
+D. Mud was deposited and lithified. Subsequent contact metamorphism resulted in localized recrystallization of the shale into sandstone.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: B
+
+Question 15:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A mother took her five-year-old child to a hospital emergency room for treatment. A doctor on the hospital staff molested the child while treating her. At the time, no one was in the treatment room except the doctor and the child; the mother had left the room to get a cup of coffee. Two weeks later, when the child told her mother what had occurred in the treatment room, the mother suffered severe emotional distress that caused her to become physically ill. In an action against the doctor by the mother on her own behalf to recover for intentional infliction of emotional distress, is the mother likely to prevail?
+
+Options:
+A. No, because the mother was contributorily negligent in leaving the child alone with the doctor during treatment.
+B. No, because the mother was neither the direct victim of the doctor's conduct nor a contemporaneous witness.
+C. Yes, because the doctor's conduct was outrageous.
+D. Yes, because the mother's distress was the natural and foreseeable consequence of the doctor's conduct. 
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 16:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The relationship of preadolescent siblings is best described as:
+
+Options:
+A. distant/aloof.
+B. conflictual/hostile.
+C. competitive and cooperative.
+D. close and conflictual.
+
+Answer:
+Model's raw answer: 'The best answer is: (C) competitive and cooperative.'
+Model's parsed answer: C
+Correct answer: D
+
+Question 17:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+All of the following are reasons major cities attract young people in Latin America EXCEPT
+
+Options:
+A. the availability of jobs.
+B. the potential for decent housing.
+C. educational opportunities.
+D. their families live there already.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: D
+
+Question 18:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Today Susan took a pill for her allergy that raised her blood pressure, caused her heart to beat faster, and raised her body temperature. Now caught in traffic, she feels angry. Yesterday, when she took the pill, she was with her husband. When her blood pressure rose, her heart speeded up, she got hotter, and she felt amorous. This description exemplifies
+
+Options:
+A. the adaptation-level phenomenon
+B. two-factor theory
+C. James-Lange theory
+D. Cannon-Bard theory
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 19:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+ In order for exchange to occur:
+
+Options:
+A. A complex societal system must be involved.
+B. Organized marketing activities must also occur.
+C. A profit-oriented organization must be involved.
+D. Each party must have something of value to the other party.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 20:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A ladder 9 meters in length is leaning against a vertical wall on level ground. As the bottom end of the ladder is moved away from the wall at a constant rate of 2 meters per second, the top end slides downward along the wall. How fast, in meters per second, will the top end of the ladder be sliding downward at the moment the top end is 3 meters above the ground?
+
+Options:
+A. 12*sqrt(2)
+B. 6*sqrt(2)
+C. 4*sqrt(2)
+D. 1/(2*sqrt(2))
+
+Answer:
+Model's raw answer: 'To solve this problem, we can use related rates in calculus. 
+
+Let \( x \) be the distance from the bottom of the ladder to the wall, and \( y \) be the height of the top of the ladder above the ground. According to the Pythagorean theorem, we have:
+
+\[
+x^2 + y^2 = 9^2
+\]
+
+This simplifies to:
+
+\[
+x^2 + y^2 = 81
+\]
+
+We are given that the bottom of the ladder is moving away from the wall at a rate of \( \frac{dx}{dt} = 2 \) m/s. We need to find \( \frac{dy}{dt} \) when \( y = 3 \) m.
+
+First, we can find \( x \) when \( y = 3 \):
+
+\[
+x^2 + 3^2 = 81
+\]
+\[
+x^2 + 9 = 81
+\]
+\[
+x^2 = 72
+\]
+\[
+x = \sqrt{72} = 6\sqrt{2}
+\]
+
+Now, we differentiate the Pythagorean equation with respect to time \( t \):
+
+\[
+\frac{d}{dt}(x^2 + y^2) = \frac{d}{dt}(81)
+\]
+
+Using the chain rule, we get:
+
+\[
+2x \frac{dx}{dt} + 2y \frac{dy}{dt} = 0
+\]
+
+Dividing through by 2 gives:
+
+\[
+x \frac{dx}{dt} + y \frac{dy}{dt} = 0
+\]
+
+Now we can solve for \( \frac{dy}{dt} \):
+
+\[
+\frac{dy}{dt} = -\frac{x}{y} \frac{dx}{dt}
+\]
+
+Substituting \( x = 6\sqrt{2} \), \( y = 3 \), and \( \frac{dx}{dt} = 2 \):
+
+\[
+\frac{dy}{dt} = -\frac{6\sqrt{2}}{3} \cdot 2
+\]
+\[
+\frac{dy}{dt} = -4\sqrt{2}
+\]
+
+The negative sign indicates that \( y \) is decreasing, which is expected as the top of the ladder slides down. 
+
+Thus, the speed at which the top end of the ladder is sliding downward is:
+
+\[
+\left| \frac{dy}{dt} \right| = 4\sqrt{2}
+\]
+
+The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 21:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Lower interest rates in the United States cause the value of the dollar and exports to change in which of the following ways? VALUE OF THE DOLLAR     U.S. EXPORTS
+
+Options:
+A. Increasing     Increasing
+B. Increasing     Decreasing
+C. Decreasing     Increasing
+D. Decreasing     Unchanged
+
+Answer:
+Model's raw answer: 'The best answer is: (C) Decreasing     Increasing'
+Model's parsed answer: C
+Correct answer: C
+
+Question 22:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Choose the reaction expected to have the greatest decrease in entropy.
+
+Options:
+A. C(s) + CO2(g) → 2 CO(g)
+B. 2 Na(s) + O2(g) → Na2O2(s)
+C. CH4(g) + 2 O2(g) → CO2(g) + 2 H2O(g)
+D. 2 NI3(s) → 3 I2(s) + N2(g)
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 23:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following mental disorders is most prevalent in the world?
+
+Options:
+A. Bipolar disorder
+B. Schizophrenia
+C. Alcohol use disorders
+D. Anxiety disorders
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 24:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is
+
+Options:
+A. 500 nm
+B. 550 nm
+C. 600 nm
+D. 650 nm
+
+Answer:
+Model's raw answer: 'The best answer is: (C) 600 nm'
+Model's parsed answer: C
+Correct answer: C
+
+Question 25:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+With which of the following relatives is an individual most likely to share a common HLA haplotype?
+
+Options:
+A. Father
+B. Mother
+C. Sister
+D. Son
+
+Answer:
+Model's raw answer: 'The best answer is: (C) Sister'
+Model's parsed answer: C
+Correct answer: C
+
+Question 26:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A research project compared the performance of learning disabled and of normal students on ten scales of the Wechsler Intelligence Scale for Children ~ Revised (WISC-R). Ten univariate analyses of variance (ANOVAs) were run to test for differences between the two groups, but use of a multivariate analysis of variance (MANOVA) would have been more desirable because MANOVA
+
+Options:
+A. usually offers greater protection against Type Il error
+B. does not require multiple-comparison follow-up tests in order to interpret significant effects
+C. usually offers greater protection against a Type I error
+D. is conceptually and computationally a simpler and more efficient approach
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 27:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I opened the gate that kept the animals safe from wildlife overnight. Scenario 2 | I volunteer at the vet clinic because I enjoy seeing animals that are suffering.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (D) Not wrong, Not wrong'
+Model's parsed answer: D
+Correct answer: A
+
+Question 28:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"MAHATMA GANDHI'S MESSAGE.
+REMAIN NON-VIOLENT
+The following message was sent by Mahatma Gandhi from Waltair:—
+Maulana Mohamed AH was arrested at Waltair under sections 107 and 108 to be called upon to give security, to be of good behaviour for one year. The place and date of trial is unknown.
+The Begum Saheba and Mr. Hayat were permitted to see him after arrest.
+He and I were going to address a meeting outside the station. He was arrested. I continued going to the meeting and addressed them. There is no cause for sorrow, but every cause for congratulation. There should be no hartal. Perfect peace and calmness should be observed. I regard the arrest as a prelude to Swaraj and the redress of the Khilafat and the Punjab wrongs, if we can remain non-violent. Retain Hindu-Muslim Unity despite the madness of some Moplahs, and fulfil the Swadeshi programme.
+I hope every Indian, man or woman, will completely boycott foreign cloth and take up spinning or weaving during every spare minute.
+By striving like the Maulana, be insistent on religious and national rights.
+Let us earn imprisonment. I am conscious of the Maulana's innocence and I am sure the imprisonment of the innocent will enable the nation to reach the cherished goal."
+Mohandas Gandhi, The Pilgrims' March, 1921
+Which of the following historical developments from the period 1450–1750 C.E. most inspired the instructions indicated in the fifth paragraph to boycott foreign cloth?
+
+Options:
+A. The conquest of India by rival Muslim empires
+B. The development of joint-stock companies
+C. The importation of food crops from the New World
+D. The African slave trade
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 29:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is expected to have the largest bond polarity?
+
+Options:
+A. S–O
+B. P–F
+C. C–B
+D. C–N
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 30:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What city's residents are known as 'Knickerbockers'?
+
+Options:
+A. Boston
+B. Philadelphia
+C. New York City
+D. London
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 31:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is an example of a double-bind message
+
+Options:
+A. A father tells his son, “I sure hope you can come to the movies with us tonight,” when his tone and posture thar he does not hope so
+B. A mother tells her daughter, “Good move,” when the daughter drops and breaks a dinner plate
+C. A teacher tells a student, “You can do that if you want to, but you'll get into trouble.”
+D. A teacher tells a student, “You can do that if you want to, but I would appreciate it if you would not
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 32:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+According to Erikson, a young adult's developmental crisis centers around
+
+Options:
+A. intimacy vs. isolation
+B. identity vs. role confusion
+C. autonomy vs. shame and guilt
+D. industry vs. inferiority
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 33:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Tariffs and quotas
+
+Options:
+A. result in lower domestic prices.
+B. sometimes raise and sometimes lower the amount of the product sold domestically.
+C. lower the amount of the product sold domestically.
+D. raise the amount of the product sold domestically.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: C
+
+Question 34:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+King, Inc. owns 70% of Simmon Co’s outstanding common stock. King’s liabilities total $450,000, and Simmon’s liabilities total $200,000. Included in Simmon’s financial statements is a $100,000 note payable to King. What amount of total liabilities should be reported in the consolidated financial statements?
+
+Options:
+A. $520,000
+B. $550,000
+C. $590,000
+D. $650,000
+
+Answer:
+Model's raw answer: 'To determine the total liabilities to be reported in the consolidated financial statements, we need to consider the liabilities of both King, Inc. and Simmon Co., while eliminating any intercompany liabilities.
+
+1. **King's Liabilities**: $450,000
+2. **Simmon's Liabilities**: $200,000
+3. **Intercompany Note Payable**: $100,000 (this liability is owed by Simmon to King and should be eliminated in consolidation)
+
+Now, we calculate the total liabilities for consolidation:
+
+Total Liabilities = King's Liabilities + Simmon's Liabilities - Intercompany Note Payable
+Total Liabilities = $450,000 + $200,000 - $100,000
+Total Liabilities = $650,000
+
+Therefore, the amount of total liabilities that should be reported in the consolidated financial statements is:
+
+The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: B
+
+Question 35:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+According to Irvin Yalom, ________in group therapy is the analogue of the therapist-client relationship in individual therapy.
+
+Options:
+A. universality
+B. identification
+C. cohesiveness
+D. alliance
+
+Answer:
+Model's raw answer: 'The best answer is: (D) alliance'
+Model's parsed answer: D
+Correct answer: C
+
+Question 36:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Who defined jurisprudence as the knowledge of things divine and human, the science of right and wrong
+
+Options:
+A. Austin
+B. Ulpian
+C. Holland
+D. Allen
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Ulpian'
+Model's parsed answer: B
+Correct answer: B
+
+Question 37:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Statement 1| L2 regularization of linear models tends to make models more sparse than L1 regularization. Statement 2| Residual connections can be found in ResNets and Transformers.
+
+Options:
+A. True, True
+B. False, False
+C. True, False
+D. False, True
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 38:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+Read the the following quotation to answer questions.
+The various modes of worship which prevailed in the Roman world were all considered by the people as equally true; by the philosopher as equally false; and by the magistrate as equally useful.
+Edward Gibbon, The Decline and Fall of the Roman Empire, 1776–1788
+The interpretation of the state of religious belief in ancient Rome by the eighteenth-century English historian Edward Gibbon might be offered as evidence for
+
+Options:
+A. the clergy's monopoly on academic scholarship in eighteenth-century Britain
+B. the hatred of all things Roman by British scholars in the eighteenth century
+C. the spread of religious skepticism among the educated elite of Britain in the eighteenth century
+D. the lack of sources available to the eighteenth-century scholar for the study of ancient Roman civilization
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 39:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A major advantage of direct mapping of a cache is its simplicity. The main disadvantage of this organization is that
+
+Options:
+A. it does not allow simultaneous access to the intended data and its tag
+B. it is more expensive than other types of cache organizations
+C. the cache hit ratio is degraded if two or more blocks used alternately map onto the same block frame in the cache
+D. its access time is greater than that of other cache organizations
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 40:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Of what is advertising a form?
+
+Options:
+A. Focusing strategy
+B. Differentiation
+C. Cost leadership
+D. Growth
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 41:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Islam first spread to Indonesia through
+
+Options:
+A. military conquest by the Mughal empire
+B. mass migrations of African Muslims across the Indian Ocean
+C. Dutch colonization in the 18th century
+D. increased commercial contacts with Indian and Arab merchants
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 42:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is a hallucination?
+
+Options:
+A. thinking you are President of the United States
+B. being sure that your boss is out to get you
+C. thinking this is 2010
+D. hearing voices that are not actually there
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 43:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+New stores opening around a large shopping mall reflect which concept?
+
+Options:
+A. Gravity concept
+B. Distance decay
+C. Complementarity
+D. Movement bias
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: D
+
+Question 44:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following may be consequences of one or more of the CLRM assumptions being violated?
+
+i) The coefficient estimates are not optimal
+
+
+ii) The standard error estimates are not optimal
+
+
+iii) The distributions assumed for the test statistics are inappropriate
+
+
+iv) Conclusions regarding the strength of relationships between the dependent
+
+and independent variables may be invalid.
+
+Options:
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 45:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In a large city littering is always a problem. The state anti-littering statute forbids throwing trash and other matter from any vehicle onto the public roads. It's a summary offense carrying a $50 fine and no imprisonment. On the third offense, the fine is $500 and there is a 5-day jail sentence. The statute does not mention any requirement of criminal intent. John and his family are coming back from a weekend picnic when his children throw bags of refuse and the remains of their lunch out of the rear window of the moving vehicle. John is stopped and given a $50 ticket. Can he succeed with a defense that he didn't know what his children were doing and that he had no criminal intent to break any laws?
+
+Options:
+A. No, because this is likely a strict liability law that does not provide for defenses based on mental state.
+B. Yes, because he didn't know what his children were doing in the back seat and he had not participated in the violation nor did he know that they did it or were going to do it.
+C. Yes, because the police have no way of proving who in the car threw the garbage out the window.
+D. No, because his criminal intent is clearly established by the circumstances of the events.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 46:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Children who are still sucking their thumbs when they enter kindergarten are often subject to teasing and ridicule for this behavior. What type of social sanction is applied in this instance?
+
+Options:
+A. Formal positive sanction
+B. Formal negative sanction
+C. Informal positive sanction
+D. Informal negative sanction
+
+Answer:
+Model's raw answer: 'The best answer is: (D) Informal negative sanction'
+Model's parsed answer: D
+Correct answer: D
+
+Question 47:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+By analyzing the levels of 13C in bones, researchers can establish whether an individual ate:
+
+Options:
+A. mostly grains or mostly nuts and fruits.
+B. mostly meat or mostly vegetables.
+C. no dairy or lots of dairy.
+D. a certain type of honey produced only in sub-Saharan Africa.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 48:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+One afternoon, police officers observed a man and a14-year-old girl smoking marijuana together. They arrested the man and charged him with the separate offenses of (1) possession of a controlled dangerous substance, and (2) contributing to the delinquency of a minor. The girl was also arrested and charged with being an accomplice to the crime of contributing to the delinquency of a minor. At trial, the girl's best defense is that
+
+Options:
+A. smoking marijuana does not necessarily make her an accomplice to the crime.
+B. the man, the adult principal, must be convicted before any prosecution can be maintained against a minor.
+C. a minor cannot be prosecuted for an adult crime.
+D. since the statute was designed to protect minors, the girl cannot be prosecuted as an accomplice.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: D
+
+Question 49:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following LEAST influences sexual behavior?
+
+Options:
+A. hypothalamus
+B. pituitary
+C. gonads
+D. reticular formation
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 50:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Third-year student is studying contracts. He has learned that generally all contractual rights may be assigned, but there are some exceptions. Which of the following is not an exception?
+
+Options:
+A. An assignment that continues the obligor's duty or risk.
+B. An assignment not allowed by law.
+C. An assignment of future rights from future contracts.
+D. An assignment that substantially changes obligor's duty or risk.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: A
+
+Question 51:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+There are three real numbers $x$ that are not in the domain of$$f(x) = \frac{1}{1+\frac{1}{1+\frac 1x}}.$$ What is the sum of those three numbers?
+
+Options:
+A. 1
+B. 0
+C. -1.5
+D. -1
+
+Answer:
+Model's raw answer: 'To find the values of \( x \) that are not in the domain of the function 
+
+\[
+f(x) = \frac{1}{1+\frac{1}{1+\frac{1}{x}}}
+\]
+
+we need to identify when the denominator is equal to zero, as this will make the function undefined.
+
+First, we simplify the expression step by step. The innermost part is \( \frac{1}{x} \). The expression can be rewritten as:
+
+\[
+f(x) = \frac{1}{1 + \frac{1}{1 + \frac{1}{x}}}
+\]
+
+Next, we need to find when \( 1 + \frac{1}{1 + \frac{1}{x}} = 0 \).
+
+1. Set the inner denominator to zero:
+   \[
+   1 + \frac{1}{x} = 0 \implies \frac{1}{x} = -1 \implies x = -1
+   \]
+
+2. Now, substitute \( x = -1 \) back into the next layer:
+   \[
+   1 + \frac{1}{1 + \frac{1}{-1}} = 1 + \frac{1}{1 - 1} = 1 + \frac{1}{0}
+   \]
+   This is undefined, so \( x = -1 \) is one value that is not in the domain.
+
+Next, we need to check when the entire denominator \( 1 + \frac{1}{1 + \frac{1}{x}} = 0 \):
+
+\[
+1 + \frac{1}{1 + \frac{1}{x}} = 0 \implies \frac{1}{1 + \frac{1}{x}} = -1
+\]
+
+This leads to:
+
+\[
+1 + \frac{1}{x} = -1 \implies \frac{1}{x} = -2 \implies x = -\frac{1}{2}
+\]
+
+Now we have two values: \( x = -1 \) and \( x = -\frac{1}{2} \).
+
+Next, we need to check when \( 1 + \frac{1}{1 + \frac{1}{x}} \) is undefined, which occurs when \( 1 + \frac{1}{x} = 0 \) (already found) and when \( x = 0 \):
+
+\[
+1 + \frac{1}{x} = 0 \implies \frac{1}{x} = -1 \implies x = -1
+\]
+
+Thus, the three values that are not in the domain are \( x = -1, -\frac{1}{2}, 0 \).
+
+Now, we find the sum of these three numbers:
+
+\[
+-1 + 0 - \frac{1}{2} = -1 - \frac{1}{2} = -\frac{3}{2}
+\]
+
+However, we need to check the options provided. The sum of the three numbers is \( -\frac{3}{2} \), which is equivalent to \( -1.5 \).
+
+Thus, the best answer is:
+
+The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 52:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What was the outcome before the European Court of Human Rights in the Al-Adsani case?
+
+Options:
+A. The Court held that the right to a fair trial trumped the privilege of immunity
+B. The Court held that immunity trumped the right to a fair trial
+C. The Court held that immunities were not in conflict with the right to a fair trial
+D. The Court held that human rights considerations prevailed over all other contrary rules of international law, including most immunities
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: C
+
+Question 53:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following strategies would probably be least effective for reducing aggressiveness in children?
+
+Options:
+A. exposure to a nonaggressive model
+B. opportunities for catharsis
+C. social skills training
+D. a threat of retaliation from a high-status person
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: B
+
+Question 54:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is NOT one of the major reasons for the increase in numbers of older adults?
+
+Options:
+A. The Baby Boom generation
+B. The steadily increasing birth rate
+C. Increases in life expectancy at birth
+D. Increases in life expectancy at a specified age
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 55:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In the past decade many states have moved forward the date of their presidential primary elections in an effort to
+
+Options:
+A. minimize the cost of running the election
+B. convince the national government to move forward the date of the general election
+C. restrict the number of entrants in the presidential race
+D. increase the significance of their election results
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 56:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Statement 1| RELUs are not monotonic, but sigmoids are monotonic. Statement 2| Neural networks trained with gradient descent with high probability converge to the global optimum.
+
+Options:
+A. True, True
+B. False, False
+C. True, False
+D. False, True
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: D
+
+Question 57:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Selective Androgen Receptor Modulators (SARMs) are:
+
+Options:
+A. steroid drugs that act on androgen receptors mimicking the effects of natural steroid hormones.
+B. steroid drugs that act on androgen receptors antagonising the effects of natural steroid hormones.
+C. non-steroid drugs that act on androgen receptors mimicking the effects of natural steroid hormones.
+D. non-steroid drugs that act on androgen receptors inhibiting the effects of natural steroid hormones.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 58:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+According to Hobbes, peace is the first law of nature because of which of the following situations?
+
+Options:
+A. Without peace everyone has a right to everything - including another's life.
+B. Peace is possible only after war.
+C. Law cannot achieve peace.
+D. The social contract cannot be entered into unless there is peace.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 59:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A 54-year-old woman comes to the office because she has had intermittent shooting pain over her right cheek and jaw during the past 3 weeks. Each episode of pain lasts for 1 second or less. The pain is often triggered by cold air, chewing, tactile stimulation, and brushing her teeth. She has had no trauma to the face or head. Medical history is remarkable for tension headaches, obesity, and gastric bypass surgery. She is 165 cm (5 ft 5 in) tall and weighs 62 kg (137 lb); BMI is 23 kg/m2 . Vital signs are normal. The patient cannot tolerate touch over the right side of the face. There is no facial weakness or loss of sensation. The remainder of the physical examination shows no abnormalities. CT scan of the head with and without contrast shows no abnormalities. Which of the following is the most appropriate pharmacotherapy at this time?
+
+Options:
+A. Carbamazepine
+B. Lamotrigine
+C. Levetiracetam
+D. Topiramate
+
+Answer:
+Model's raw answer: 'The best answer is: (A) Carbamazepine'
+Model's parsed answer: A
+Correct answer: A
+
+Question 60:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A woman went to a nearby supermarket late one night. She parked in the store's parking lot, and while walking toward the building two masked males assaulted and raped her. The lot was poorly lit, had no security personnel, and was frequented by gang members. The police had several incident reports in the past 12 months documenting prior criminal activities, including some personal robberies and assaults, in the lot. The store itself had even more reports than the police. The woman sued the store for her injuries, claiming that it breached its duty to make the premises reasonably safe for its customers. Will she likely prevail?
+
+Options:
+A. Yes, a business will be liable for known conditions in the building or adjoining parking areas that are a danger to the personal safety and security of its customers.
+B. No, the store owes no special duty of care to eliminate crime on the parking lot; it was up to the police to perform that task.
+C. No, the occurrence of a rape of a customer was not a foreseeable event and the store had no duty to try and discover that such a potential danger could exist.
+D. Yes, a store owner is the guarantor to every customer that he or she will be protected and safe when walking in the parking lot.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 61:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which one of the following is the main reason for pruning a Decision Tree?
+
+Options:
+A. To save computing time during testing
+B. To save space for storing the Decision Tree
+C. To make the training set error smaller
+D. To avoid overfitting the training set
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 62:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following statements is true of the temporomandibular joint?
+
+Options:
+A. It has an articular disc of hyaline cartilage
+B. Its articular surfaces are covered by hyaline cartilage
+C. Proprioceptive information is carried by the chorda tympani and deep temporal nerves
+D. Proprioceptive information is carried by the masseteric and auriculotemporal nerves.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 63:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What term describes someone who does not believe in the existence of God?
+
+Options:
+A. hedonist
+B. deist
+C. agnostic
+D. atheist
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 64:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which group represents the Persian (Iranian) variation of Islam and believes in the infallibility and divine right to authority of the Imams descended from Ali?
+
+Options:
+A. Sunni
+B. Shiite
+C. Imam
+D. Untouchables
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 65:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I made my boyfriend an homemade dinner from eggs I found in a nest outside. Scenario 2 | I voted for the man who was a criminal
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: A
+
+Question 66:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Old operating systems like _______ and NT-based systems have buffer-overflow attack a common vulnerability.
+
+Options:
+A. Windows 7
+B. Chrome
+C. IOS12
+D. UNIX
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 67:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"The challenge of the next half century is whether we have the wisdom to use wealth to enrich and elevate our national life, and to advance the quality of our American civilization….The Great Society rests on abundance and liberty for all. It demands an end to poverty and racial injustice, to which we are totally committed in our time. But that is just the beginning. The Great Society is a place where every child can find knowledge to enrich his mind and to enlarge his talents. It is a place where leisure is a welcome chance to build and reflect, not a feared cause of boredom and restlessness. It is a place where the city of man serves not only the needs of the body and the demands of commerce but the desire for beauty and the hunger for community. It is a place where man can renew contact with nature. It is a place which honors creation for its own sake and for what it adds to the understanding of the race. It is a place where men are more concerned with the quality of their goals than the quantity of their goods. But most of all, the Great Society is not a safe harbor, a resting place, a final objective, a finished work. It is a challenge constantly renewed, beckoning us toward a destiny where the meaning of our lives matches the marvelous products of our labor."
+Lyndon Johnson, Remarks at the University of Michigan, Ann Arbor, 1964
+Along with his goals of establishing a Great Society, Johnson was also engaged in which of the following initiatives?
+
+Options:
+A. Undermining Communism in Cuba with the Bay of Pigs Invasion
+B. Undermining Communism in Vietnam after the Tet Offensive
+C. Undermining Communism in Turkey and Greece using economic aid
+D. Undermining Communism in the Eastern Block by demanding a removal of the Berlin Wall
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 68:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Current legal and ethical standards require that a treatment record be kept for each patient. At the minimum, this treatment record should include
+
+Options:
+A. initial findings: consent of patient's cognitions, reveries, and fantasies; dares of service and billings patient's progress
+B. diagnoses; initial findings; treatment plan; dates of service and billing; progress in the treatment plan
+C. diagnoses; initial findings; content of patient's cognitions, reveries, and fantasies; dates of service and billing; progress in the treatment plan
+D. initial findings; dates of service and billing; patient's progress
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 69:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+When will the next major impact occur on Earth?
+
+Options:
+A. Hundreds of millennia in the future.
+B. Major impacts can no longer occur since the period of heavy bombardment is over.
+C. Hundreds of millennia after the last major impact.
+D. Could be any time. The probability of impact is the same next year as it is for any later year.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 70:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"Al-Zawawi also said 'This sultan Musa told me that at a town called ZKRY he has a copper mine from which ingots are brought to BYTY. "There is nothing in my kingdom, Musa said, on which a duty is levied except this crude copper which is brought in. Duty is collected on this and on nothing else. We send it to the land of the pagan Sudan and sell it for two-thirds of its weight in gold, so that we sell 100 measures of this copper for 66 2/3 measures of gold.' He also stated that there are pagan nations in his kingdom from whom he does not collect the tribute (jizya) but whom he simply employs in extracting the gold from its deposits. The gold is extracted by digging pits about a man's height in depth and the gold is found embedded in the sides of the pits or sometimes collected at the bottom of them."
+From N. Levtzion & J.F.P. Hopkins, eds. Corpus of Early
+Arabic Sources for West African History. Cambridge
+University Press, 1981. Reprinted with permission of
+Cambridge University Press.
+Al' Umari, ca. 1300–1384
+Based on your knowledge of world history and the passage, Mansa Musa's assertion about the lack of duties levied on goods in his kingdom most strongly reflects which of the following about the kingdom of Mali?
+
+Options:
+A. Mali's wealth came in large part from its exploitation of minerals.
+B. Mali's wealth came in large part from its conquest of pagan neighbors.
+C. Mali's wealth came in large part from large agricultural estates.
+D. Mali's wealth came in large part from the exploitation of the slave trade.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 71:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following constitutional provisions is applicable to corporations?
+
+Options:
+A. The privileges and immunities clause of the Fourteenth Amendment.
+B. The comity clause of Article IV.
+C. The Fifth Amendment's prohibition against compulsory self-incrimination.
+D. The equal protection clause of the Fourteenth Amendment.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 72:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"And then Shapur, King of Kings, passed away. Then his son Hormizd, King of Kings, rose over the empire. And Hormizd, King of Kings, conferred on me cap and belt and created for me a higher rank and dignity, and at court and in kingdom after kingdom, place after place, throughout the whole empire he gave me more authority and power in matters of the divine services, and created for me the title "Kerdir, Ahura Mazda's [Chief Priest]" after the name of Ahura Mazda, the Deity. And thereupon in kingdom after kingdom, place after place, many divine services were performed in magnificence, and many Warham fires were established, and many magi became happy and prosperous, and many fires and magi were imperially installed…
+And then Hormizd, King of Kings, passed away. Then Bahram, King of Kings, son of Shapur, King of Kings, and brother of Hormizd, King of Kings, rose over the empire. And Bahram, King of Kings, also held me in high honor and dignity and at court and in kingdom after kingdom, place after place, gave me authority and power for divine services of every sort. And thereupon in kingdom after kingdom, place after place, many divine services were performed in magnificence and many Warharan fires were established, and many magi became happy and prosperous, and many fires and magi were imperially installed…
+And in kingdom after kingdom and place after place throughout the whole empire the services of Ahura Mazda and the gods became preeminent, and great dignity came to the Mazdayanian religion and the magi in the empire, and the gods and water and fire and small cattle in the empire attained great satisfaction, while Ahriman [the evil counterpart to Ahura Mazda] and the demons were punished and rebuked, and the teachings of Ahriman and the demons departed from the empire and were abandoned. And Jews, Buddhists, Hindus, Nasoreans [Orthodox Christians], Christians, Maktak [Baptists], and Manichaeans in the empire were smitten, and destruction of idols and scattering of the stores of the demons and god-seats and nests was abandoned."
+Excerpt from the inscription of Kerdir at Naqsh-e-Rustam, Persia, late third century C.E.
+The source best supports which of the following inferences about sources of political authority in the period circa 600 B.C.E.–600 C.E.?
+
+Options:
+A. Rulers derived legitimacy for their rule by their sponsorship of religion and chief priests.
+B. Rulers were limited in their political authority by powerful religious figures.
+C. Rulers derived legitimacy for their rule through victories over foreign peoples.
+D. Rulers derived legitimacy for their rule through the consent of those they governed.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 73:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following substances is found in greater quantity in exhaled air?
+
+Options:
+A. Carbon dioxide
+B. Carbon monoxide
+C. Nitrogen
+D. Oxygen
+
+Answer:
+Model's raw answer: 'The best answer is: (A) Carbon dioxide'
+Model's parsed answer: A
+Correct answer: C
+
+Question 74:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+If 3^(x – 3) + 10 = 19, then x =
+
+Options:
+A. 3
+B. 4
+C. 5
+D. 6
+
+Answer:
+Model's raw answer: 'To solve the equation \( 3^{(x - 3)} + 10 = 19 \), we first isolate the exponential term:
+
+\[
+3^{(x - 3)} = 19 - 10
+\]
+\[
+3^{(x - 3)} = 9
+\]
+
+Next, we recognize that \( 9 \) can be expressed as a power of \( 3 \):
+
+\[
+9 = 3^2
+\]
+
+Thus, we can set the exponents equal to each other:
+
+\[
+x - 3 = 2
+\]
+
+Now, we solve for \( x \):
+
+\[
+x = 2 + 3
+\]
+\[
+x = 5
+\]
+
+Therefore, the best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 75:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | As my parents laid in bed, I went to the museum. Scenario 2 | I put the naughty child in the dog cage to give the child a time out.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: C
+
+Question 76:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+World-affirming religions:
+
+Options:
+A. embrace conventional cultural values but offer new means of achieving them
+B. react against the loss of any meaningful religious content in the teachings of churches
+C. adopt an attitude of mild disapproval towards mainstream social values
+D. reject both the goals and means of conventional society and provide utopian alternatives
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 77:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)
+E ⊃ (F ∨ ~G)
+F ⊃ (~E ∨ ~G) / ~(E ≡ F)
+
+Options:
+A. Valid
+B. Invalid. Counterexample when E, F, and G are true
+C. Invalid. Counterexample when E and F are true and G is false
+D. Invalid. Counterexample when E, F, and G are false
+
+Answer:
+Model's raw answer: 'To determine the validity of the argument using indirect truth tables, we need to analyze the premises and the conclusion.
+
+1. The premises are:
+   - E ⊃ (F ∨ ~G)
+   - F ⊃ (~E ∨ ~G)
+
+2. The conclusion is:
+   - ~(E ≡ F)
+
+We will check if the premises can be true while the conclusion is false. The conclusion ~(E ≡ F) is false when E and F have the same truth value (both true or both false).
+
+Let's analyze the options:
+
+- **Option A (Valid)**: This would mean that the premises lead to the conclusion in all cases, which we need to check.
+
+- **Option B (Invalid. Counterexample when E, F, and G are true)**: If E, F, and G are all true:
+  - E ⊃ (F ∨ ~G) becomes true ⊃ (true ∨ false) = true ⊃ true = true.
+  - F ⊃ (~E ∨ ~G) becomes true ⊃ (false ∨ false) = true ⊃ false = false.
+  - The conclusion ~(E ≡ F) becomes false (since E and F are both true).
+  - Here, the premises are not both true, so this is not a valid counterexample.
+
+- **Option C (Invalid. Counterexample when E and F are true and G is false)**: If E and F are true and G is false:
+  - E ⊃ (F ∨ ~G) becomes true ⊃ (true ∨ true) = true ⊃ true = true.
+  - F ⊃ (~E ∨ ~G) becomes true ⊃ (false ∨ true) = true ⊃ true = true.
+  - The conclusion ~(E ≡ F) becomes false (since E and F are both true).
+  - Here, both premises are true while the conclusion is false, making this a valid counterexample.
+
+- **Option D (Invalid. Counterexample when E, F, and G are false)**: If E, F, and G are all false:
+  - E ⊃ (F ∨ ~G) becomes false ⊃ (false ∨ true) = false ⊃ true = true.
+  - F ⊃ (~E ∨ ~G) becomes false ⊃ (true ∨ true) = false ⊃ true = true.
+  - The conclusion ~(E ≡ F) becomes true (since both E and F are false).
+  - Here, both premises are true while the conclusion is true, so this is not a valid counterexample.
+
+Based on this analysis, the best answer is:
+
+The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 78:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Who has legal responsibility for a patient's care during hospital admission, stay, and discharge?
+
+Options:
+A. The named nurse.
+B. The named consultant.
+C. The ward manager.
+D. The GP.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 79:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The family life cycle:
+
+Options:
+A. Is a way to apply psychographic segmentation.
+B. Refers to the process of family formation and dissolution.
+C. Provides insights into the relationships among age, occupation, income, and housing.
+D. Is composed of the 11 stages of personal growth from infancy to retirement.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 80:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The geneticist Mary Lyon hypothesized the existence of structures visible just under the nuclear membrane in mammals, which were later named Barr bodies. Which of the following statement is NOT correct about Barr bodies?
+
+Options:
+A. In the early female embryo, one copy of the X chromosome becomes inactivated in every body cell.
+B. The same chromosome in every cell of a normal female is inactivated.
+C. A male with the XXY genotype will have one Barr body.
+D. Barr bodies consist of highly methylated DNA.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 81:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Macroeconomics focuses on
+
+Options:
+A. government and its laws that affect commerce.
+B. individuals and their resource use.
+C. corporations and their production levels.
+D. the resource use of the entire nation.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 82:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Of the following, which gives the best upper bound for the value of f(N) where f is a solution to the recurrence f(2N + 1) = f(2N) = f(N) + log N for N >= 1, with f(1) = 0?
+
+Options:
+A. O(log N)
+B. O(N log N)
+C. O(log N) + 0(1)
+D. O((log N)^2)
+
+Answer:
+Model's raw answer: 'To solve the recurrence relation f(2N + 1) = f(2N) = f(N) + log N, we can analyze the growth of f(N).
+
+1. Start with the base case: f(1) = 0.
+2. For N = 1, we have f(2) = f(1) + log(1) = 0 + 0 = 0.
+3. For N = 2, we have f(4) = f(2) + log(2) = 0 + 1 = 1.
+4. For N = 3, we have f(3) = f(1) + log(1) = 0 + 0 = 0.
+5. For N = 4, we have f(8) = f(4) + log(4) = 1 + 2 = 3.
+6. Continuing this process, we can see that f(N) accumulates log terms as N increases.
+
+The recurrence suggests that f(N) grows logarithmically with respect to N, and since we are adding log terms at each step, we can expect the growth to be bounded by O((log N)^2) due to the repeated logarithmic additions.
+
+Thus, the best upper bound for f(N) is O((log N)^2).
+
+The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 83:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In conducting a study on the relationship between depression and academic achievement, you are collecting third-grade children’s self- report data and their scores on a standardized achievement test. Parents have given informed consent to allow you to assess their children, but two children tell you that they do not want to participate in the study. At this point, which of the following is your most appropriate course of action regarding these two children
+
+Options:
+A. Since the parents have consented to participation, the children can be included in the study
+B. You can ask the teacher to discuss with the children why they do not want to participate
+C. You can obtain information about the children from the teacher, bur cannot collect the children’s self-report data
+D. The children should not be included in the study
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 84:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following propositions is an immediate (one-step) consequence in PL of the given premises?
+E ⊃ ~F
+~F ⊃ G
+~G
+
+Options:
+A. E ⊃ F
+B. F ⊃ G
+C. G ⊃ E
+D. ~~F
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 85:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The distinction between general and particular jurisprudence was recognized by
+
+Options:
+A. Holland
+B. Salmond
+C. Austin
+D. Kelsen
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Salmond'
+Model's parsed answer: B
+Correct answer: C
+
+Question 86:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A driver has been charged with leaving the scene of an accident. The driver allegedly hit another car in a parking lot and drove away without leaving proper insurance and contact information. A bystander wrote down her license plate number and called the police. At trial, the driver proposes to testify that the day after the accident, she met with the police officer investigating the accident, and told him that she did not leave until after she had inspected both cars and determined there was no damage. The bystander is not available to testify at trial. The driver's testimony is
+
+Options:
+A. admissible, because it is the statement of the witness herself, who is subject to cross-examination.
+B. admissible, because it is a statement based on firsthand knowledge.
+C. inadmissible, because the bystander is unavailable and, therefore, cannot contradict the driver.
+D. inadmissible, because it is hearsay not within any recognized exception.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 87:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+At approximately 3:00 p. m. on December 3, a motorist was speeding down a street at the same time that a pedestrian was crossing the street. When the pedestrian started to cross the street, she saw the traffic light was red. She momentarily stopped, thought about waiting until the light turned green, but then decided to cross anyway. As the pedestrian was halfway across the street, the motorist, who was driving 50 m. p. h. in a 25 m. p. h. zone, struck her with his vehicle. The pedestrian suffered a broken pelvis and internal injuries in the accident. While in the hospital, the pedestrian's insurance company paid $10,000 of her medical expenses. Six months later, the pedestrian brought suit against the motorist to recover damages for all her medical expenses. This jurisdiction has a "modified" comparative negligence statute in effect. Suppose a jury returned a special verdict with the following findings: (1) The motorist was 60 percent negligent in speeding; (2) The pedestrian was 40 percent at fault in crossing the street against the red light; and (3) The pedestrian suffered damages from the accident totaling $50,000. After the verdict, the court was advised that the pedestrian's insurance company had already paid the pedestrian $10,000. As a result, the court should enter a judgment for the pedestrian in the amount of
+
+Options:
+A. $50,000, because the motorist's negligence was greater than the pedestrian's.
+B. $30,000, the proportion of the pedestrian's damages caused by the motorist's negligence, but the payment of $10,000 in hospital expenses will be disregarded under the collateral source rule.
+C. $20,000, the proportion of the pedestrian's damages caused by her own negligence, but the payment of $10,000 in hospital expenses will be disregarded under the collateral source rule.
+D. $10,000, the proportion of the pedestrian's damages caused by her own negligence, less the $10,000 in hospital expenses already paid by the insurance company.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 88:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The tripartite system used the 11+ exam to select pupils for:
+
+Options:
+A. popular schools that lay outside their catchment area
+B. private, public and comprehensive schools
+C. grammar, technical, and secondary modern schools
+D. polytechnics, colleges and universities
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 89:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"When the gods fashioned Gilgamesh*, to him they gave a perfect form. The glorious sun Shamash bestowed upon him glory; Adad the terrible god of storms bestowed upon him courage. The great gods perfected his magnificence beyond all others, terrible like the great wild bull. Two thirds god they made him; one third man they made him.
+Of Uruk, its great rampart he built, and the wall of the sacred Eanna temple, the holy sanctuary. Behold the outer walls which gleam with the brilliance of copper; see the inner wall which none might rival. Touch the threshold stone—it is from ancient days. Goest thou into the Eanna temple, yea, the dwelling place of Ishtar, the like of which no subsequent king or living man might equal. Ascend and walk about on the wall of Uruk, inspect the corner-stone, and examine its brick-work, whether its wall is not made of burned brick, and its foundation laid by the Seven Sages. One third for city, one third for garden, one third for field, and a precinct for the temple of Ishtar. These parts and the precinct comprise Uruk."
+The Epic of Gilgamesh, ca. 2100 B.C.E.
+*Gilgamesh was a king of Uruk.
+The description of Gilgamesh in the first paragraph of the passage most directly supports which of the following statements about ancient leaders?
+
+Options:
+A. Ancient leaders were valued for their mastery of complicated legal codes.
+B. Ancient leaders were expected to be experts of animal husbandry.
+C. Ancient leaders were given divine origins to bolster their legitimacy.
+D. Ancient leaders were not judged on their appearances.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 90:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A national distributor of windows selected a retailer to sell its windows in a specified geographic area. The parties negotiated a written distribution agreement, which stated that any order for windows placed by the retailer would be binding on the distributor "only when expressly accepted by the distributor." For the next two years, the retailer forwarded orders to the distributor, and the distributor always filled the orders. In the third year, the distributor accused the retailer of overcharging customers to install the distributor's windows. The retailer responded that the distributor had no control over the retailer's installation prices. When the distributor received the retailer's next order for windows, it refused to fill the order. If the retailer sues the distributor for breach of contract, will it be likely to prevail?
+
+Options:
+A. No, because the retailer's forwarding of orders to the distributor did not give rise to an obligation on the distributor's part to fill the orders.
+B. No, because the retailer's practice of overcharging customers excused the distributor's refusal to fill the order.
+C. Yes, because the distributor's claim regarding overcharging customers is independent of its obligation to fill the retailer's order.
+D. Yes, because the parties' course of dealing binds the distributor to fill the retailer's order.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 91:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | The kitten could not drink on its own, so I fed it to the dog. Scenario 2 | To prevent the cat from getting loose, I put a hook in its mouth.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (A) Wrong, Wrong'
+Model's parsed answer: A
+Correct answer: A
+
+Question 92:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of these is a member of the cucumber family?
+
+Options:
+A. green pepper
+B. watermelon
+C. potato
+D. green bean
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 93:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In the process of generating ATP, hydrogen ions (H+, or protons) are transported across the inner mitochondrial membrane and the thylakoid membrane by a proton pump (an ATPase). You would expect to find similar proton pumps in the plasma membranes of
+
+Options:
+A. bacteria
+B. mammalian muscle cells
+C. mammalian nerve cells
+D. plants and fungi
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 94:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following poses the greatest safety risk while being heated in a school laboratory?
+
+Options:
+A. A mixture of iron and sulfur
+B. Mercury(II) oxide
+C. Sodium chloride
+D. Copper(II) sulfate hydrate
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 95:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What is the genetic structure of rotavirus?
+
+Options:
+A. Circular DNA containing virus
+B. RNA virus with RT
+C. ds RNA virus
+D. ds RNA virus in segments
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: B
+
+Question 96:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+ If a global ban would not be effective in prohibiting genetic engineering that goes beyond eliminating obvious defects, then Singer suggests which "bolder" strategy?
+
+Options:
+A. creating a world military that would enforce the ban with greater strength
+B. requiring genetic engineering for every newborn child
+C. using a lottery system so everyone gets a fair chance at the benefits of genetic engineering
+D. none of the above
+
+Answer:
+Model's raw answer: 'The best answer is: (D) none of the above'
+Model's parsed answer: D
+Correct answer: C
+
+Question 97:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+According to humanistic psychologists, psychological disorders are most likely caused by
+
+Options:
+A. neurochemical imbalances.
+B. unhealthy attributional styles.
+C. learned associations.
+D. unfulfilled needs.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 98:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following theories is based on the notion that mitochondria and chloroplasts evolved from prokaryotic cells?
+
+Options:
+A. Fluid mosaic model
+B. Endosymbiotic model
+C. Taxonomic model
+D. Respiration feedback model
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 99:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In which one of the following situations would the defendant most likely be found guilty of felony murder?
+
+Options:
+A. A baseball fan traveled all night to the stadium, planning to purchase tickets from a scalper at the stadium. However, the fan arrived at the stadium after the game had started, and no tickets were available. He proceeded to sneak around the guard at the entrance gate and illegally entered the stadium. He watched the remainder of the game in the standing room only section. The fan became so enraged when the opposition took the lead in the ninth inning that he pulled out a gun from under his jacket and aimed it at the section of spectators in front of him. Before he could be subdued he had fired three shots, killing one person and severely injuring another.
+B. A customer was in a bank filling out a deposit slip when a robber entered. The robber went to the teller's window and quietly slipped a note to the teller, demanding everything in the cash drawer. The customer, who was unaware of the robbery taking place, went to the adjoining teller's window and made his deposit. Upon obtaining his receipt, the customer suddenly collapsed and died of a heart attack. When the robber saw this, he panicked and left the bank before the teller could comply with his demand.
+C. Two men planned to rob a luncheonette during the noontime rush. At 12:30 p. m. , as planned, one of the men entered the luncheonette and pointed a gun at the cashier, who handed over the money. The man left to meet the other man outside as he was standing guard as a lookout. As soon as the man ran out of the door, a police officer tried to grab him. The man evaded the officer for a brief moment. Thinking that the other man had double-crossed him and informed the police of their plans, he fatally shot the other man.
+D. A man and a woman had been feuding for years. In order to show him a thing or two, the woman decided to set fire to the man's house. Before dawn one morning, the woman went to the man's house and lit a match to gasoline she had poured at the man's front door. The house caught fire and quickly spread to the man's bedroom, where the man was able to leap out of the window without injury. A police officer who was driving by saw the woman running away one block from the man's house. The police officer pulled his car up to the woman to determine if she was involved in setting the fire. Upon seeing the officer, the woman starts to flee the scene. As she is running away, the woman pulled out a revolver and started shooting indiscriminately behind her. The police officer was struck by one of the shots and was killed.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: D
+
+Question 100:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I like to give strangers a kiss when they aren't expecting it. Scenario 2 | I put a leash around a dragon and taught it to roll over and play dead.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: B
+
+Question 101:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A supermarket signed a contract with a bakery to provide the supermarket with 100 loaves of whole wheat bread per week for 12 consecutive weeks. The loaves were to be delivered on the first day of each week, with payment to be made within four days of delivery. For the first four weeks, the bakery delivered loaves to the supermarket and the supermarket made the appropriate payments. When the fifth delivery arrived, the supermarket discovered that the shipment contained 80 whole wheat loaves and 20 sourdough loaves. The manager of the supermarket immediately called the bakery to complain about the shipment. The operator of the bakery apologized and offered to send 20 loaves of whole wheat bread within 24 hours. What is the probable legal effect of the operator's conversation with the manager with regard to the fifth shipment?
+
+Options:
+A. The supermarket would have the right to reject the fifth shipment and cancel their contract.
+B. The supermarket would have the right to reject the fifth shipment, but would be held liable for the remaining deliveries.
+C. The supermarket would not be entitled to reject the operator's offer to "cure. "
+D. The supermarket would have a right to "cover" by purchasing substitute loaves of bread.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: C
+
+Question 102:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Find the maximum possible order for an element of S_n for n = 10.
+
+Options:
+A. 6
+B. 12
+C. 30
+D. 105
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: C
+
+Question 103:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In the diamond structure of elemental carbon, the nearest neighbors of each C atom lie at the corners of a
+
+Options:
+A. square
+B. hexagon
+C. cube
+D. tetrahedron
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 104:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Which of the following sets of integers could possibly be the set of all common divisors of two integers?
+
+Options:
+A. {-6,-2, -1, 1, 2, 6}
+B. {-6, -2, -1, 0, 1, 2, 6}
+C. {-6, -3, -2, -1, 1, 2, 3, 6}
+D. {-6, -3, -2, -1, 0, 1, 2, 3, 6}
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 105:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which one of the following represents a IIIrd cranial nerve palsy and is a neurosurgical emergency?
+
+Options:
+A. Unilateral constricted pupil.
+B. Bilateral constricted pupils.
+C. Unilateral fixed dilated pupil.
+D. Oval shaped pupils.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 106:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which vitamin is required for synthesis of the blood clotting proteins?
+
+
+Options:
+A. Vitamin A
+B. Vitamin D
+C. Vitamin E
+D. Vitamin K
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 107:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"Some men look at constitutions with sanctimonious reverence, and deem them like the ark of the covenant, too sacred to be touched. They ascribe to the men of the preceding age a wisdom more than human, and suppose what they did to be beyond amendment….But I know also, that laws and institutions must go hand in hand with the progress of the human mind. As that becomes more developed, more enlightened, as new discoveries are made, new truths disclosed, and manners and opinions change with the change of circumstances, institutions must advance also, and keep pace with the times."
+Thomas Jefferson, 1816
+Which of the following best describes a contributing factor in the crafting of the United States Constitution?
+
+Options:
+A. Individual state constitutions written at the time of the Revolution tended to cede too much power to the federal government, leading to a call for reform on the part of Anti-Federalists.
+B. The weaknesses of the Articles of Confederation led James Madison to question their efficacy and prompted a formation of the Constitutional Congress in 1787
+C. Difficulties over trade and foreign relations led to a repeal of overly restrictive tariffs required by the Articles of Confederation.
+D. Washington's embarrassing failure at the Whiskey Rebellion led to Federalist demands for a new framework for federal power.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 108:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I divert emergency supplies from hospitals to retail warehouses. Scenario 2 | I put the child's painted hand onto the paper.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: B
+
+Question 109:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A buyer, located on the west coast contacted a seller, located on the east coast, about purchasing flanges that the buyer used in their manufacturing process. The parties entered into a contract whereby the seller agreed to deliver to the buyer 1,000 flanges for $10,000. The contract stipulated that it was FOB at the seller's place of business. The seller then delivered the flanges to a delivery company, which was to transport them to the buyer. While en route, the vehicle that was transporting the flanges was involved in an accident and the flanges were destroyed. When the buyer received notice of the accident, the buyer immediately contacted the seller and demanded that it ship replacement flanges. The seller refused to do so. In an action by the buyer against the seller for breach of contract, the buyer will
+
+Options:
+A. succeed, because the risk of loss was on the seller.
+B. succeed, because the carrier was the seller's agent.
+C. not succeed, because the risk of loss was on the buyer.
+D. not succeed, because of frustration of purpose.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 110:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+ The importance and significance of customer experience to both individuals and society is referred to as:
+
+Options:
+A. Knowledge economy.
+B. Service economy.
+C. Experience economy.
+D. Customer economy.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 111:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Papilloma viruses are characterised by what genetic feature?
+
+Options:
+A. A genome of ds circular DNA encoding around 8 ORF
+B. A virus with RT able to integrate and cause cancer
+C. A variable ds RNA virus
+D. A large DNA containing virus
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 112:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What techniques and targets belong to a workable definition of terrorism and terrorist concerns?
+
+Options:
+A. Suicide attacks have been employed by terrorists having the advantage of enabling detonation at the last minute or when casualties will be maximized. A potential future danger is that a suicide attack could be combined with the use of chemical, biological or radiological weapons.
+B. The ability to find vulnerable targets may be greater in democratic states since there are limitations on how much a government can monitor its citizen and will, in the event of an attack, generate more publicity. However, security forces in weak non-democratic countries also provide conditions conducive to terrorist activity, enabling relative freedom of operation and movement.
+C. WMD have not been used very often, requiring high levels of resources and trained personnel for use. Furthermore, most terrorist groups still prefer to use more predictable methods for inflicting maximum casualties on the target. Yet to some extent, terrorist groups have gained a psychological edge because of the fear of use of WMD.
+D. All of these options.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 113:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following are the passive elements?
+
+Options:
+A. Resistor
+B. Bulb
+C. Both
+D. None of these.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 114:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A first-year law student worked as a part-time law clerk at a prestigious law firm. He was permitted to borrow law books and legal treatises to take home for his own personal use. One afternoon, the law student was preparing a brief in the firm's law library when he noticed a book lying on the conference table. Making sure no one was watching him, he took the book and placed it in his briefcase. He planned to take the book home that night with the intention of not returning it. If the law student is subsequently charged with larceny of the book, which of the following claims, if true, would LEAST aid him in his defense?
+
+Options:
+A. The law firm had failed to give him his salary for two weeks, and he took the book as security for the debt.
+B. He intended to return the book after reading it.
+C. The law firm had given him possession of the book.
+D. The law firm had given him custody of the book.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: D
+
+Question 115:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The police suspected a woman of dealing in stolen credit cards. An undercover police officer knocked on the woman's door and told her that he was willing to pay for usable credit cards. When the woman asked if he was a police officer, the officer replied, "No," giving her a false name and saying, "You can call Harvey he'll vouch for me." The woman admitted him to her house. After she left the room to call Harvey, the officer lifted some papers off a desk and underneath discovered three credit cards bearing different names. He seized the cards, and when the woman returned, he arrested her. The woman has moved to suppress the evidence seized on the ground that her Fourth Amendment rights were violated. Should the court grant the motion to suppress?
+
+Options:
+A. No, because it was immediately apparent that the cards were stolen.
+B. No, because the woman assumed the risk that the officer would seize items in plain sight.
+C. Yes, because the woman's rights were violated when the officer lifted the papers.
+D. Yes, because the woman's rights were violated when the officer obtained entry by deceit.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: C
+
+Question 116:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Moore defines the naturalistic fallacy as the view that:
+
+Options:
+A. everything that is natural is good.
+B. everything that is good is natural.
+C. good is identical to a natural property.
+D. all of the above.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: C
+
+Question 117:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A group's performance on a(n) __________ task is limited by the performance of the least skilled or knowledgeable member of the group.
+
+Options:
+A. additive
+B. compensatory
+C. disjunctive
+D. conjunctive
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 118:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Anscombe claims that it is not profitable to do moral philosophy until we have an adequate philosophy of:
+
+Options:
+A. religion.
+B. physics.
+C. psychology.
+D. art.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 119:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is essential to societal security?
+
+Options:
+A. Sovereignty.
+B. Identity.
+C. All of these options.
+D. Hegemonic ethnicity.
+
+Answer:
+Model's raw answer: 'The best answer is: (C) All of these options.'
+Model's parsed answer: C
+Correct answer: B
+
+Question 120:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What is the birthstone for the month of January?
+
+Options:
+A. topaz
+B. garnet
+C. opal
+D. diamond
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 121:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A psychologist decides to use a computerized test service to facilitate scoring and interpretation of the MMPI-2, which he frequently administers to his clients. The psychologist should be aware that:
+
+Options:
+A. the use of computerized interpretations is prohibited by ethical guidelines.
+B. computerized scoring and interpretation services are notoriously unreliable.
+C. computerized interpretations should always be supplemented with other information obtained by the psychologist.
+D. because of their objectivity, computerized interpretations are preferable to subjective interpretations.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 122:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A practitioner is engaged to express an opinion on management’s assertion that the square footage of a warehouse offered for sale is 150,000 square feet. The practitioner should refer to which of the following sources for professional guidance?
+
+Options:
+A. Statements on Auditing Standards
+B. Statements on Standards for Attestation Engagements
+C. Statements on Standards for Accounting and Review Services
+D. Statements on Standards for Consulting Services
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 123:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Rita is moving a pile of 120 rocks by hand to build a rock wall. If h represents the number of rocks that she can carry in one load, which expression represents the total number of loads needed to move the entire pile of rocks?
+
+Options:
+A. 120 +h
+B. 120h
+C. 120 −h
+D. 120/h
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 124:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+An owner of an adult bookstore was angry that a city ordinance had been passed requiring that all "adult" establishments be located in areas zoned industrial. This owner was located in a tourist area downtown and was very profitable. Claiming his First Amendment rights were being violated, he filed suit in court. The court will likely find for:
+
+Options:
+A. The owner, as his First Amendment rights were indeed breached.
+B. The city, because they have a right to regulate offensive activities.
+C. The city, because it does not unreasonably limit alternative avenues of communication.
+D. The owner, as it is a legitimate business.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 125:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Ichthyosaurs were aquatic dinosaurs. Fossils show us that they had dorsal fins and tails, as do fish, even though their closest relatives were terrestrial reptiles that had neither dorsal fins nor aquatic tails. The dorsal fins and tails of ichthyosaurs and fish are
+
+Options:
+A. homologous.
+B. examples of convergent evolution.
+C. adaptations to a common environment.
+D. B and C only
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 126:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Students in an introductory psychology class are required to participate in one of the university's ongoing research projects. This practice is:
+
+Options:
+A. ethical as long as students can choose to participate in an alternative activity instead.
+B. ethical as long as students are free to choose the research project they participate in.
+C. ethical as long as informed consents are obtained from students before they participate.
+D. clearly unethical.
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 127:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+The passage below is written by John Calvin.
+If we need to be recalled to the origin of election, to prove that we obtain salvation from no other source than the mere goodness of God, they who desire to extinguish this principle, do all they can to obscure what ought to be magnificently and loudly celebrated, and to pluck up humility by the roots. In ascribing the salvation of the remnant of the people to the election of grace, Paul clearly testifies, that it is then only known that God saves whom upon which there can be no claim. They who shut the gates to prevent anyone from presuming to approach and taste this doctrine, do no less injury to man than to God; for nothing else will be sufficient to produce in us suitable humility, or to impress us with a due sense of our great obligations to God. Nor is there any other basis for solid confidence, even according to the authority of Christ, who, to deliver us from all fear, and render us invincible amidst so many dangers, snares, and deadly conflicts, promises to preserve in safety all whom the Father has committed to His care.
+—John Calvin, Institutes of the Christian Religion, 1559
+Which of the following religions that started around the same time as Calvinism was destroyed for supporting adult baptism and pacifism?
+
+Options:
+A. Huguenots
+B. Lutherans
+C. Presbyterians
+D. Anabaptists
+
+Answer:
+Model's raw answer: 'The best answer is: (D) Anabaptists'
+Model's parsed answer: D
+Correct answer: D
+
+Question 128:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Police received information from a reliable informant that a defendant would be extorting money from a victim. The informant gave the police explicit details about the extortion scheme: the defendant would be calling the victim from a public phone booth on a particular street corner on a certain date and time to make the extortionist demand. Without notif'ing the telephone company or seeking a warrant, the police installed an eavesdropping device on the public phone. At the time on the date specified by the informant, the defendant phoned the victim from the telephone booth and said, "You better pay me $5,000 by next week or I'll kill you and your family. " The defendant provided additional details about how and where to make the payoff. Based on the taped conversation, the police arrested the defendant and charged him with extortion. Prior to trial, the defendant's attorney moves to exclude the taped conversation from evidence. The defense motion should be
+
+Options:
+A. granted, because the police did not secure a warrant before installing the eavesdropping device.
+B. granted, because the police did not obtain prior approval of the telephone company before installing the eavesdropping device.
+C. denied, because the defendant did not have reasonable expectation of privacy.
+D. denied, because the police had probable cause based on the information supplied by the informant.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: A
+
+Question 129:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I plan on taking my best friends girlfriend, out to the movies to win her over. Scenario 2 | I gave the sick child two hundred advil for her fever
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (A) Wrong, Wrong'
+Model's parsed answer: A
+Correct answer: A
+
+Question 130:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Arabidopsis is advantageous for plant genetic research because:
+
+Options:
+A. it is commercially important as a food crop
+B. it is an endangered species
+C. it is the closest to humans of any existing plant
+D. it is a small plant with a small genome size which can be raised inexpensively
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 131:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which statement is true?
+
+Options:
+A. All hexagons are triangles because they have at least 3 sides.
+B. All octagons are polygons because they have at least 3 sides.
+C. All parallelograms are rectangles because they have 2 sets of parallel sides.
+D. All rhombi are squares because they have 4 sides that are all the same length.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 132:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For very high force contractions lasting 1-2 seconds, the initial energy source is from:
+
+Options:
+A. Glycolysis.
+B. creatine phosphorylation.
+C. phosphocreatine stores.
+D. ATP stores.
+
+Answer:
+Model's raw answer: 'The best answer is: (C) phosphocreatine stores.'
+Model's parsed answer: C
+Correct answer: D
+
+Question 133:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+ Use indirect truth tables to determine whether each set of propositions is consistent. If the set is consistent, choose an option with a consistent valuation. (There may be other consistent valuations.)
+(E ⊃ F) ⊃ G
+(~E ∨ F) ≡ (H ∨ I)
+I ⊃ (J ⊃ ~H)
+~G ⊃ ~J
+
+Options:
+A. Inconsistent
+B. Consistent. Consistent valuation when E is true and F, G, H, I, and J are false
+C. Consistent. Consistent valuation when E and H are true and F, G, I, and J are false
+D. Consistent. Consistent valuation when E and I are true and F, G, H, and J are false
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 134:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following was an important technique used by Abraham Maslow and the humanistic psychologists during therapy?
+
+Options:
+A. defense mechanisms
+B. factor analysis
+C. unconditional positive regard
+D. somatotype theory
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 135:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A large city was interested in annexing part of the surrounding county. In a survey conducted by the local newspaper, 58 percent of respondents said they were against the annexation. During the actual vote, not all eligible voters voted, but 56 percent of the respondents voted against the annexation. Which of the following best describes the difference in the percentages obtained from the newspaper poll and the vote itself?
+
+Options:
+A. It is an example of nonresponse bias, the systematic tendency of individuals with particular characteristics to refuse to answer a survey question.
+B. It is the systematic difference between a statistic and parameter caused by the nonrandom selection of surveyed persons.
+C. It is the difference between the same statistics computed from two different samples.
+D. It is the difference between the statistic and the truth due to use of a random sample.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 136:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In which dementia are cognitive symptoms less likely?
+
+Options:
+A. Parkinson's
+B. Pick's
+C. Huntington's
+D. NeuroAIDS
+
+Answer:
+Model's raw answer: 'The best answer is: A. Parkinson's'
+Model's parsed answer: A
+Correct answer: A
+
+Question 137:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Let X be a topological space, and let A, B, and C be nonempty subsets of X such that A c B c C; that is, A is a proper subset of B, and B is a proper subset of C. Which of the following statements is (are) true?
+I. If A and C are connected, then B is connected.
+II. If A and C are compact, then B is compact.
+III. If A and C are Hausdorff, then B is Hausdorff.
+
+Options:
+A. I and II only
+B. III only
+C. I and III only
+D. I, II, and III
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: D
+
+Question 138:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is (are) characteristic of mass spectrometry?
+I. Analyte molecules are converted to gaseous ions.
+II. The ions are separated according to their mass-to-charge ratio.
+III. In addition to compound identification, mass spectra can be utilized to determine precise isotopic masses and isotopic ratios.
+
+Options:
+A. II only
+B. I and II only
+C. I and III only
+D. I, II, and III
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 139:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I completed my homework in my bedroom. Scenario 2 | I gave opioids to the patient in the rehab care center.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: C
+
+Question 140:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I snatched the cell phone while she wasn't looking. Scenario 2 | I neglected answering my emails nor did I get any work done while I was at work.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: A
+
+Question 141:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A defendant was employed by a railroad company as a watchman at its crossing, to give warning to the public of approaching trains. Late one evening, he fell asleep in his kiosk and failed to warn of the approach of an oncoming train. A man, who was driving his car, knew of the usual presence of the watchman. As he approached the crossing, he received no warning. Driving onto the track, the man's car was struck and crushed by the train. The man died instantly. A few minutes after the accident, a police officer arrived at the crossing and walked into the kiosk. As he entered, the defendant then awoke. The police officer asked him, "What happened here?" The defendant made incriminating statements. The defendant is subsequently charged with involuntary manslaughter. His motion to prevent the introduction of his incriminating statements into evidence will most likely be
+
+Options:
+A. granted, because the police officer failed to give the defendant his Miranda warnings.
+B. granted, because the police officer's conduct in questioning the defendant immediately after he awoke was unfairly prejudicial to the defendant.
+C. denied, because the exchange took place in a non-custodial setting and the question was investigatory in nature.
+D. denied, because the defendant's incriminating statements were voluntary.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 142:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"We have witnessed for more than a quarter of a century the struggles of the two great political parties for power and plunder, while grievous wrongs have been inflicted upon the suffering people. We charge that the controlling influences dominating both these parties have permitted the existing dreadful conditions to develop without serious effort to prevent or restrain them. Neither do they now promise us any substantial reform. They have agreed together to ignore, in the coming campaign, every issue but one. They propose to drown the outcries of a plundered people with the uproar of a sham battle over the tariff, so that capitalists, corporations, national banks, rings, trusts, watered stock, the demonetization of silver and the oppressions of the usurers may all be lost sight of. They propose to sacrifice our homes, lives, and children on the altar of mammon; to destroy the multitude in order to secure corruption funds from the millionaires.
+"Assembled on the anniversary of the birthday of the nation, and filled with the spirit of the grand general and chief who established our independence, we seek to restore the government of the Republic to the hands of 'the plain people,' with which class it originated. We assert our purposes to be identical with the purposes of the National Constitution; to form a more perfect union and establish justice, insure domestic tranquillity, provide for the common defence, promote the general welfare, and secure the blessings of liberty for ourselves and our posterity."
+Populist Party Platform, 1892
+The "free silver" campaign of 1896 received its greatest popular support from
+
+Options:
+A. New England businessmen, who were discriminated against under the existing banking system
+B. Southern women, who incorporated it into a larger campaign for economic equality
+C. bankers, who had run out of paper currency to invest
+D. farmers, who hoped that a more generous money supply would ease their debt burdens
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 143:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What animal is considered sacred in India?
+
+Options:
+A. Sheep
+B. Cow
+C. Chicken
+D. Dog
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Cow'
+Model's parsed answer: B
+Correct answer: B
+
+Question 144:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Calculate the Larmor frequency for a proton in a magnetic field of 1 T.
+
+Options:
+A. 23.56 GHz
+B. 42.58 MHz
+C. 74.34 kHz
+D. 13.93 MHz
+
+Answer:
+Model's raw answer: 'The best answer is: (B) 42.58 MHz'
+Model's parsed answer: B
+Correct answer: B
+
+Question 145:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Three half-lives after an isotope is prepared,
+
+Options:
+A. 25% of the isotope is left
+B. 25% of the isotope decayed
+C. 12.5% of the isotope is left
+D. 12.5% of the isotope decayed
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 146:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is NOT a characteristic of perfectly competitive industry?
+
+Options:
+A. Free entry into the industry.
+B. Product differentiation.
+C. Perfectly elastic demand curve.
+D. Homogeneous products.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 147:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Mary, a wealthy St. Petersburg widow, executed her first and only will on May 15, 1990 and died on August 18, 1990. Her will provided that her estate be divided equally between her only child, Joan, and the Salvation Army of Largo. How will Mary's estate actually be distributed?
+
+Options:
+A. 100% to Joan.
+B. 100% to Joan if she files a timely petition requesting that the devise to the Salvation Army be avoided.
+C. 50% to Joan and 50% to the Salvation Army.
+D. 50% to Joan and the income from the remaining 50% to Joan for life, remainder to the Salvation Army, if Joan files a timely petition protesting the devise to the Salvation Army.
+
+Answer:
+Model's raw answer: 'The best answer is: (C) 50% to Joan and 50% to the Salvation Army.'
+Model's parsed answer: C
+Correct answer: C
+
+Question 148:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Traditional working class identity was based around:
+
+Options:
+A. shared working conditions in the manufacturing industry
+B. the class consciousness of members of the proletariat
+C. local communities, extended kinship networks and shared leisure pursuits
+D. collective aspirations to move into the middle class
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 149:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What type of psychologist would assert that a key motivation for people is the desire to spread their genetic material?
+
+Options:
+A. cognitive
+B. evolutionary
+C. humanistic
+D. psychodynamic
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 150:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Failed sessions allow brute-force attacks on access credentials. This type of attacks are done in which layer of the OSI model?
+
+Options:
+A. Physical layer
+B. Data-link Layer
+C. Session layer
+D. Presentation layer
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 151:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In the short run, a firm employs labor and capital to produce gadgets. If the annual price of capital increases, what will happen to the short-run cost curves?
+
+Options:
+A. The marginal cost and average variable cost curves will shift upward.
+B. The average fixed cost and average total cost curves will shift upward.
+C. The marginal cost and average fixed cost curves will shift upward.
+D. The marginal cost, average fixed cost, average variable cost, and average total cost curves will all shift upward.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 152:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Identify the antecedent of the following conditional proposition: The Bees win their first game only if either the Aardvarks or the Chipmunks do not win their first games.
+
+Options:
+A. The Aardvarks do not win their first game.
+B. The Bees win their first game.
+C. The Chipmunks do not win their first game.
+D. Either the Aardvarks or the Chipmunks do not win their first games.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 153:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Droughts technical glitches and restrictions on the use of resources can all result in
+
+Options:
+A. a vertical Phillips curve
+B. supply shocks
+C. structural shocks
+D. demand-pull inflation
+
+Answer:
+Model's raw answer: 'The best answer is: (B) supply shocks'
+Model's parsed answer: B
+Correct answer: B
+
+Question 154:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A farmer buys a new tractor for $40,000 and expects to use it for 20 years, after which the tractor will have a salvage value of $10,000. What is the straight-line depreciation that can be taken for the first year of ownership?
+
+Options:
+A. 1500
+B. 1667
+C. 2000
+D. 2250
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: A
+
+Question 155:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"It's come! It's posted at the district mayor's office," a passerby shouted at me as he ran. I reached the Rue Drout in one leap. … I read the message at a glance. … "The First Day of Mobilization Will Be Sunday, August 2 [1914]." … It was an announcement to a million and a half Frenchmen. … War! … Dead tired but exhilarated, I got back to [my newspaper's office] and burst into the office of Georges Clemenceau, our chief. "What is Paris saying?" he asked me. "It's singing, sir!" "It will be all right then[," Clemenceau replied].
+Roland Doregelès, After 50 Years, c. 1965
+From the passage, one may infer that Clemenceau
+
+Options:
+A. was disgusted to hear that Paris was reacting with joy at the advent of war
+B. had grave doubts about France's ability to win a war against Germany
+C. would one day serve as prime minister of France
+D. was relieved to hear that Paris was reacting with joy at the advent of war
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 156:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which one of the following political leaders could not be termed a 'transformational' leader?
+
+Options:
+A. Margaret Thatcher
+B. Mikhail Gorbachov
+C. Nelson Mandela
+D. Bill Clinton
+
+Answer:
+Model's raw answer: 'The best answer is: (A) Margaret Thatcher'
+Model's parsed answer: A
+Correct answer: D
+
+Question 157:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which one of the following is a disadvantage of the general to specific or "LSE" ("Hendry") approach to building econometric models, relative to the specific to general approach?
+
+Options:
+A. Some variables may be excluded at the first stage leading to coefficient biases
+B. The final model may lack theoretical interpretation
+C. The final model may be statistically inadequate
+D. If the initial model is mis-specified, all subsequent steps will be invalid.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: B
+
+Question 158:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I served lemonade with lunch. Scenario 2 | I frequently encouraged the police force to counteract criminals.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (D) Not wrong, Not wrong'
+Model's parsed answer: D
+Correct answer: D
+
+Question 159:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In what year did the BBC start broadcasting radio?
+
+Options:
+A. 1917
+B. 1922
+C. 1925
+D. 1927
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 160:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The field of psychology arose out of which of the following?
+
+Options:
+A. Biochemistry
+B. Physics
+C. Philosophy
+D. Cross-cultural anthropology
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 161:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+To move the economy closer to full employment the central bank decides that the federal funds rate must be increased. The appropriate open market operation is to ______ which ______ the money supply ______ aggregate demand and fights ______. OMO     MONEY SUPPLY     AD     TO FIGHT
+
+Options:
+A. Buy bonds     Increases     Increases     Unemployment
+B. Buy bonds     Increases     Increases     Inflation
+C. Sell bonds     Decreases     Decreases     Unemployment
+D. Sell bonds     Decreases     Decreases     Inflation
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 162:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+How does a buffer overflow on the stack facilitate running attacker-injected code?
+
+Options:
+A. By overwriting the return address to point to the location of that code
+B. By writing directly to the instruction pointer register the address of the code
+C. By writing directly to %eax the address of the code
+D. By changing the name of the running executable, stored on the stack
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 163:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following goods is likely to provide both the largest total utility and the smallest marginal utility?
+
+Options:
+A. Plastic
+B. Automobiles
+C. Computers
+D. Air
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 164:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A landlord is the owner in fee simple of a tract ofland on which is situated a studio. The landlordleases the land and building thereon to a tenant fora term of seven years, commencing on August 1,2001, and terminating at midnight on July 31, 2008. The lease contains the following provisions:"(1) The tenant covenants not to assign the leased premises without the consent of the landlord. "After three years of the lease had expired, the tenant, without the consent of the landlord, assigned the entire balance of the lease period to a dance instructor, who took immediate possession of the leased property. The landlord accepted rental payments from the dance instructor. Then in 2005, the dance instructor assigned his leasehold interest to a yoga instructor who went into possession. Assume for the purposes of this question only that the landlord, after learning of the dance instructor's assignment to the yoga instructor, brings suit against the dance instructor to have the assignment declaredvoid. The landlord will most likely
+
+Options:
+A. succeed, because the original leasehold agreement prohibited assignments.
+B. succeed, because the covenant prohibiting assignments did not run with the land.
+C. not succeed, because in accordance with the Rule in Dumpor's Case, where the landlord consents to one transfer, he waives his right to avoid future transfers.
+D. not succeed, because the privity of estate between the dance instructor and the landlord terminated when he assigned the leasehold to the yoga instructor.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 165:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The theory of evolution is most accurately described as
+
+Options:
+A. an educated guess about how species originate.
+B. one possible explanation, among several scientific alternatives, about how species have come into existence.
+C. an opinion that some scientists hold about how living things change over time.
+D. an overarching explanation, supported by much evidence, for how populations change over time.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 166:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is the point at which an impulse is transmitted from one neuron to another neuron?
+
+Options:
+A. Dendrite
+B. Glial cell
+C. Nerve center
+D. Synapse
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 167:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is located beneath the diaphragm in the left upper quadrant of the abdominal cavity?
+
+Options:
+A. Appendix
+B. Duodenum
+C. Spleen
+D. Pancreas
+
+Answer:
+Model's raw answer: 'The best answer is: (C) Spleen'
+Model's parsed answer: C
+Correct answer: C
+
+Question 168:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Darv Co. had a current ratio of 3-to-1 and a quick ratio of 1-to-1. Current liabilities were $322000. What was the total amount for inventory and prepaid expenses?
+
+Options:
+A. $322,000
+B. $644,000
+C. $966,000
+D. 1288000
+
+Answer:
+Model's raw answer: 'To find the total amount for inventory and prepaid expenses, we can use the information given about the current ratio and quick ratio.
+
+1. **Current Ratio**: The current ratio is given as 3-to-1. This means that for every $1 of current liabilities, there are $3 of current assets. 
+
+   Current Assets = Current Liabilities × Current Ratio
+   Current Assets = $322,000 × 3 = $966,000
+
+2. **Quick Ratio**: The quick ratio is given as 1-to-1. This means that for every $1 of current liabilities, there is $1 of quick assets (current assets minus inventory and prepaid expenses).
+
+   Quick Assets = Current Liabilities × Quick Ratio
+   Quick Assets = $322,000 × 1 = $322,000
+
+3. **Calculating Inventory and Prepaid Expenses**: 
+   We know that:
+   Current Assets = Quick Assets + Inventory + Prepaid Expenses
+
+   Rearranging gives us:
+   Inventory + Prepaid Expenses = Current Assets - Quick Assets
+   Inventory + Prepaid Expenses = $966,000 - $322,000 = $644,000
+
+Thus, the total amount for inventory and prepaid expenses is $644,000.
+
+The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 169:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Is the unlawful homicide committed by Minister of country X abroad an act jure imperii or jure gestionis?
+
+Options:
+A. Such conduct is a public act (jure imperii)
+B. Such conduct never attracts immunity
+C. Such conduct is a private act (jure gestionis)
+D. Such conduct is a public act but is shielded by immunity
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: C
+
+Question 170:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+ The socio-political alliance between the kshatriyas and the shramanas was rooted in their shared opposition to which of the following?
+
+Options:
+A. Brahminic orthodoxy
+B. Legalistic asceticism
+C. Bhakti devotionals
+D. Unorthodox practices
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 171:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The Yang-shao culture gave way to the Lung-Shan sometime after:
+
+Options:
+A. 6,000 B.P.
+B. 5,000 B.P.
+C. 4,000 B.P.
+D. 3,000 B.P.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 172:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following materials has a resistance that is LEAST affected by temperature changes?
+
+Options:
+A. Copper
+B. Carbon
+C. Germanium
+D. Silicon
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 173:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A man who owned a haberdashery placed an order by telephone from a wholesale supplier of cashmere and wool clothing, for "triple-dozen purple cashmere socks, size 10 13 at current resale price. " The supplier's sales agent orally accepted the order at the agreed price of $250 per dozen. In accordance with the supplier's customary business practice, the sales agent then mailed the following confirmation letter, which he signed and dated:"As per your telephone order, this letter serves to confirm the purchase of 36 dozen cashmere socks, color purple, size 10 13, at the agreed price of $250 per dozen. Total sales price: $9,000. "This letter was received by the man, who briefly glanced at it but failed to notice the "36 dozen" wording or the total price. The man placed the letter in his files and did not respond to it. Three weeks later, the supplier tendered 36 dozen purple cashmere socks, which the man rejected on the grounds that he had ordered only three dozen. The supplier resold the same purple cashmere socks to another buyer for a total price of $8,000. The supplier sued the man for the $1,000 difference. If the man pleads the statute of frauds as a defense, will such a defense be successful?
+
+Options:
+A. Yes, because the statute was not satisfied by the supplier's tender of the goods, which were rejected by the man, and the supplier did not rely on the oral agreement other than by attempting delivery.
+B. Yes, because the agreed price for three dozen socks was over $500, and the supplier's written memo incorrectly stated the quantity of goods ordered.
+C. No, because the supplier's written memo was sufficient to satisf' the statute as against the supplier, and the man, having reason to know of the memo's contents, failed to give notice of objection within 10 days of receipt.
+D. No, because the supplier's written memo operated as an acceptance, with proposals for additional terms that became part of the contract after the man failed to object to such additional terms within a reasonable time.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 174:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I spoke to my mom on the phone during my entire work shift. Scenario 2 | I helped my friend escape prison.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: A
+
+Question 175:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of these features suggest that a pulsation in the neck is arterial?
+
+Options:
+A. A waggling earlobe
+B. Positive for hepatojugular reflux
+C. No variation with posture
+D. Pressure in the root of the neck reduces the impulse
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 176:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+What differences emerged with regard to theorizing on both sides of the Atlantic?
+
+Options:
+A. From a US perspective, it is common to regard the main voice of security to be external. The question of what should or what should not count as security issues and how to conceptualize security.
+B. The European school is based on a hegemonic form of knowledge. Knowledge is conceived as the understanding of causal mechanisms in relation to the material on which they act.
+C. The different forms of knowledge relate to a conflicting conception of the relationship to policy: the problem-solving tradition in US political science vs. the critical studies in Europe.
+D. Theorizing has parallel theoretical forms of knowledge based on empirically substantiated cause-and-effect relationships.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 177:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In a group of 10 scores, the largest score is increased by 40 points. What will happen to the mean?
+
+Options:
+A. It will remain the same.
+B. It will increase by 4 points.
+C. It will increase by 10 points.
+D. It will increase by 40 points.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: B
+
+Question 178:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Classical economists believe
+
+Options:
+A. in the quantity theory of money—that both the velocity and the quantity of goods and services sold per period are fairly stable
+B. there is a serious risk of a liquidity trap because the demand curve for money is relatively flat
+C. that the government should make every effort to fine-tune the economy
+D. that the aggregate supply curve is L-shaped
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 179:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+The Systems Theory claims that a group of interaction components constitute together an entire organization. Which of the following properties of a family system is incorrectly defined:
+
+Options:
+A. EQUIFINALITY: end result is the same, no matter where you enter the system
+B. WHOLENESS: whole is greater than sum of parts
+C. HOMEOSTASIS→ system restores status quo when disrupted
+D. POSITIVE FEEDBACK→ disrupting homeostasis by creating deviations in the status quo
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: B
+
+Question 180:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+When the graph of a certain function $f(x)$ is shifted $2$ units to the right and stretched vertically by a factor of $2$ (meaning that all $y$-coordinates are doubled), the resulting figure is identical to the original graph. Given that $f(0)=0.1$, what is $f(10)$?
+
+Options:
+A. 0.01
+B. 1
+C. 32
+D. 3.2
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 181:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following guidance systems is principally a materials-handling device?
+
+Options:
+A. Escalator
+B. Conveyor
+C. Highway
+D. Railroad
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 182:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A victim was leaving his favorite local watering hole and contemplating a late night cheeseburger when he tripped over his own feet and fell on the sidewalk. A few moments later, the victim got up in a daze and stepped into the street, where he was struck by a car driven by the defendant, who was speeding, in violation of a regulation of state law. The victim died in the hospital two hours later. Which of the following is the most serious crime for which the defendant should be found guilty?
+
+Options:
+A. Speeding.
+B. Involuntary manslaughter.
+C. Voluntary manslaughter.
+D. Murder.
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Involuntary manslaughter.'
+Model's parsed answer: B
+Correct answer: B
+
+Question 183:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+In Python 3, which of the following function checks in a string that all characters are in uppercase?
+
+Options:
+A. isupper()
+B. join(seq)
+C. len(string)
+D. ljust(width[, fillchar])
+
+Answer:
+Model's raw answer: 'The best answer is: (A)'
+Model's parsed answer: A
+Correct answer: A
+
+Question 184:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | My mom asked me to deep clean the bath so I covered it in bleach. Scenario 2 | For the funeral, I wore my clown costume to honor the dead.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (B) Wrong, Not wrong'
+Model's parsed answer: B
+Correct answer: C
+
+Question 185:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+According to Baier’s theory, the second step in assessing whether an action is morally permissible is to find out:
+
+Options:
+A. whether it is forbidden by a moral rule of one’s group.
+B. whether the moral rule forbidding it is a genuine moral rule.
+C. whether it is forbidden by a law.
+D. whether one can approve of it.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 186:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I gave the thirsty 13 year old a glass of milk. Scenario 2 | I used dishwashing liquid to clean the dishes.
+
+Options:
+A. Wrong, Wrong
+B. Wrong, Not wrong
+C. Not wrong, Wrong
+D. Not wrong, Not wrong
+
+Answer:
+Model's raw answer: 'The best answer is: (D) Not wrong, Not wrong'
+Model's parsed answer: D
+Correct answer: D
+
+Question 187:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which sentence most accurately describes how neurons communicate?
+
+Options:
+A. Neurons communicate through physical contact between dendrites of one cell and the next cell.
+B. Electricity passes between neurons, which carries messages between one neuron and another.
+C. Chemicals travel from one neuron to another, influencing whether a neuron will fire or not.
+D. Neurons send messages up the spinal cord to the cerebral cortex through neural reflexes.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 188:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A school committee member is lobbying for an increase in the gasoline tax to support the county school system. The local newspaper conducted a survey of county residents to assess their support for such an increase. What is the population of interest here?
+
+Options:
+A. All school-aged children
+B. All county residents
+C. All county residents with school-aged children
+D. All county residents with children in the county school system
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 189:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Jupiter and the other jovian planets are sometimes called "gas giants." In what sense is this term misleading?
+
+Options:
+A. The materials they are made of are not normally gaseous in everyday experience.
+B. They actually contain a significant fraction of non-gaseous matter.
+C. The materials that make up these planets are primarily in the form of a plasma not a gas.
+D. Actually it's a great description because these worlds are big and gaseous throughout.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 190:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Ms. Ling has been living in her home for exactly 4 years. She knows that there are 12 months in each year. She found the total number of months, m, she has been living in her home by using the number sentence below. 4 × 12 = m Which number sentence shows another way to find the total number of months, m, Ms. Ling has been living in her home?
+
+Options:
+A. 12 ÷ m = 4
+B. m × 4 = 12
+C. 12 – m = 4
+D. m ÷ 4 = 12
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 191:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A monopoly with a straight, downward-sloping demand curve has a marginal revenue curve that is
+
+Options:
+A. upward sloping
+B. halfway between the demand curve and the vertical axis
+C. initially downward sloping and then upward sloping
+D. parallel to the demand curve
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 192:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+"I come to present the strong claims of suffering humanity. I come to place before the Legislature of Massachusetts the condition of the miserable, the desolate, the outcast. I come as the advocate of helpless, forgotten, insane and idiotic men and women; of beings, sunk to a condition from which the most unconcerned would start with real horror; of beings wretched in our Prisons, and more wretched in our Alms-Houses. . . .
+"If my pictures are displeasing, coarse, and severe, my subjects, it must be recollected, offer no tranquil, refined, or composing features. The condition of human beings, reduced to the extremest states of degradation and misery, cannot be exhibited in softened language, or adorn a polished page.
+"I proceed, Gentlemen, briefly to call your attention to the present state of Insane Persons confined within this Commonwealth, in cages, closets, cellars, stalls, pens! Chained, naked, beaten with rods, and lashed into obedience!"
+—Dorothea Dix, "Memorial to the Massachusetts Legislature" (1843)
+Dorothea Dix's testimony to the Massachusetts legislature reflects the influence of which of the following?
+
+Options:
+A. Social Darwinism.
+B. The Second Great Awakening.
+C. Second-wave feminism.
+D. The Christian Science movement.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 193:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A defendant and a classmate were students at a state college. They were spending a leisurely afternoon listening to music in the defendant's dorm room. They had just consumed a six-pack of beer when the classmate asked the defendant if there was anything else to drink. The defendant indicated there wasn't and suggested that his classmate drive to the store and buy another six-pack. The classmate told the defendant that his car wasn't working and asked the defendant if he could borrow his. The defendant assented and gave his classmate the keys to his car. The defendant knew that the classmate was drunk when he lent him his car. The classmate was driving to the store at an excessive rate of speed. As he approached an intersection, he was traveling at 70 M. PJ-I. When he came to the intersection, the light turned red. The classmate, who made no effort to stop in time, drove through the red light and collided with another car. The driver of the other car, who had entered the intersection with a green light, was killed in the accident. In the event that the defendant can be convicted of manslaughter, it will most likely be upon the basis of
+
+Options:
+A. responsibility for the accident as an accomplice.
+B. recklessness in lending his car to his classmate.
+C. joint venture in lending his car to his classmate for a common purpose.
+D. vicarious liability for the conduct of his classmate.
+
+Answer:
+Model's raw answer: 'The best answer is: B. recklessness in lending his car to his classmate.'
+Model's parsed answer: B
+Correct answer: B
+
+Question 194:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+This question refers to the following information.
+O ye who believe! Strong drink and games of chance and idols… are only an infamy of Satan's handiwork. Leave it aside in order that ye may succeed.
+the Qur'an, Sura 5: 89
+When once you hear the roses are in bloom,
+Then is the time, my love, to pour the wine.
+the Rubáiyát of Omar Khayyám
+Both verses relate most closely to
+
+Options:
+A. key economic processes within Islamic society.
+B. production of food and drink in Islamic society.
+C. religious regulation of personal behavior in Islamic society.
+D. changing gender relations in Islamic society.
+
+Answer:
+Model's raw answer: 'The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 195:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Why does a Marxist account of law reject individual rights?
+
+Options:
+A. Because they are inconsistent with state control.
+B. Because they are an expression of a capitalist economy and are unnecessary in a socialist society.
+C. Because the concept of rights is philosophically unsound.
+D. Because Marx, Engels, and Lenin failed to provide a coherent analysis of rights.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: B
+
+Question 196:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which proposition below is the most consistent with what Rawls claims the POP would opt for in respect of 'social primary goods'?
+
+Options:
+A. The POP will choose wealth over a compassionate society.
+B. The POP will choose equality over power.
+C. The POP will be unselfish.
+D. The POP will choose to protect the disabled.
+
+Answer:
+Model's raw answer: 'The best answer is: (B)'
+Model's parsed answer: B
+Correct answer: A
+
+Question 197:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+As of December 1, year 2, a company obtained a $1,000,000 line of credit maturing in one year on which it has drawn $250,000, a $750,000 secured note due in five annual installments, and a $300,000 three-year balloon note. The company has no other liabilities. How should the company’s debt be presented in its classified balance sheet on December 31, year 2 if no debt repayments were made in December?
+
+Options:
+A. Current liabilities of $1,000,000; long-term liabilities of $1,050,000
+B. Current liabilities of $500,000; long-term liabilities of $1,550,000
+C. Current liabilities of $400,000; long-term liabilities of $900,000
+D. Current liabilities of $500,000; long-term liabilities of $800,000
+
+Answer:
+Model's raw answer: 'To determine how the company's debt should be presented in its classified balance sheet, we need to analyze each component of the debt:
+
+1. **Line of Credit**: The company has drawn $250,000 from a $1,000,000 line of credit. Since this line of credit matures in one year, the entire drawn amount of $250,000 is classified as a current liability.
+
+2. **Secured Note**: The $750,000 secured note is due in five annual installments. Since no repayments have been made, we need to determine how much of this note is due within the next year. Assuming equal installments, if the total is divided by five, the annual installment would be $150,000. Therefore, $150,000 of this note is classified as a current liability.
+
+3. **Balloon Note**: The $300,000 three-year balloon note is also classified as a long-term liability because it does not mature within the next year.
+
+Now, we can summarize the current and long-term liabilities:
+
+- **Current Liabilities**:
+  - Line of Credit: $250,000
+  - Secured Note (current portion): $150,000
+  - Total Current Liabilities: $250,000 + $150,000 = $400,000
+
+- **Long-Term Liabilities**:
+  - Secured Note (long-term portion): $750,000 - $150,000 = $600,000
+  - Balloon Note: $300,000
+  - Total Long-Term Liabilities: $600,000 + $300,000 = $900,000
+
+Thus, the total liabilities are:
+- Current Liabilities: $400,000
+- Long-Term Liabilities: $900,000
+
+The correct presentation of the company's debt in its classified balance sheet on December 31, year 2 is:
+
+The best answer is: (C)'
+Model's parsed answer: C
+Correct answer: C
+
+Question 198:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following best explains why enzymes are effective in facilitating chemical reactions?
+
+Options:
+A. They raise the temperature of the reaction mixture, thereby speeding up the conversion of reactants to products.
+B. They alter the equilibrium constant of a reaction (K_eq) so that more reactant can be converted to product.
+C. They increase the maximal rate of the chemical reaction (V_max).
+D. They lower the activation energy, thereby speeding up the conversion of reactants to products.
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Question 199:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+A healthy 2-year-old girl is brought to the office for a routine well-child visit. The child was weaned at 6 months of age and began to walk at 10 months of age. On physical examination, she has mild bowlegs (10-degree genu varum). Which of the following is the most appropriate management to recommend at this time?
+
+Options:
+A. Increased intake of vitamin D
+B. A special exercise program
+C. Surgical correction
+D. No treatment is needed at this time
+
+Answer:
+Model's raw answer: 'The best answer is: (D) No treatment is needed at this time'
+Model's parsed answer: D
+Correct answer: D
+
+Question 200:
+Please answer the following multiple-choice question. Give your answer immediately, in the format 'The best answer is: (X)'
+
+Question:
+Which of the following is NOT a key milestone reached by the EU?
+
+Options:
+A. The introduction of a common currency used by many EU countries
+B. A customs union
+C. A single market
+D. A common European language
+
+Answer:
+Model's raw answer: 'The best answer is: (D)'
+Model's parsed answer: D
+Correct answer: D
+
+Model gpt-4o-mini-2024-07-18 accuracy: 78.50%
