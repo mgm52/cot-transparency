@@ -4,7 +4,7 @@ import logging
 import os
 from pathlib import Path
 import tempfile
-from typing import NoReturn, Optional, TypeVar
+from typing import TypeVar, Optional, NoReturn
 
 A = TypeVar("A")
 
