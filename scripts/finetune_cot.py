@@ -1,3 +1,4 @@
+import argparse
 import asyncio
 import dataclasses
 import json
@@ -230,7 +231,7 @@ class FormatterOptions(str, Enum):
     # see match_formatter_options for details
     control_only_unbiased = "control_only_unbiased"
     all_biased = "all_biased"
-    zero_shot = "zero_shot"
+    zero_shot = "InitialWrongMoreClearFormatter"
     few_shot = "few_shot"
     prompt_variants_set1 = "prompt_variants_set1"
     prompt_variants_all = "prompt_variants_all"
@@ -1017,7 +1018,7 @@ def multi_fine_tune(
     ), f"Not enough alpaca train samples, only {len(alpaca_train_samples)}, required {n_instruct_samples}"
 
     samples = (total_task_samples + alpaca_train_samples).shuffle("42")
-    print("ESTIMATED NUMBER OF SAMPLES", num_tokens_for_finetuning_samples(samples))
+    print("ESTIMATED NUMBER OF TOKENS", num_tokens_for_finetuning_samples(samples))
 
     val_samples = (non_cot_val_samples + cot_val_samples + alpaca_val_samples).shuffle("42")
 
@@ -1246,7 +1247,7 @@ def fine_tune_with_bias_augmentation(
     # if FormatterOptions.control_only_unbiased, then we only use unbiased contexts for training
     project_name: str = "consistency-training",
     model: str = "gpt-3.5-turbo",
-    n_samples: int = 72000,
+    n_samples: int = 72000,  # does not include the (n_bct_samples * instruct_sample_proportion) alpaca samples
     instruct_sample_proportion: float = 0.1,
     override_instruct_samples: Optional[int] = None,  # EVIL HACK to override the number of instruct samples
     post_hoc: bool = False,
@@ -1444,12 +1445,21 @@ def get_cot_samples(
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "model",
+        default="gpt-3.5-turbo",
+        help="The openai model to finetune (e.g. gpt-3.5-turbo)",
+    )
+    args = parser.parse_args()
+
     model = fine_tune_with_bias_augmentation(
-        model="gpt-3.5-turbo",
+        model=args.model,
         n_epochs=1,
         n_samples=10000,
         post_hoc=False,
         cot_percentage=0.50,
+        instruct_sample_proportion=1.0,
         project_name="consistency-training",
     )
 
