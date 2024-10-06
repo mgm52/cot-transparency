@@ -1,38 +1,38 @@
 import asyncio
+from collections import defaultdict
 from pathlib import Path
 import argparse
-from typing import List, Dict, Any, Union, Callable, Awaitable, TypeVar, Optional, cast
+from typing import List, Dict, Any, Sequence, Union, Callable, Awaitable, TypeVar, Optional, cast
 import json
 import openai
-from openai.error import RateLimitError  # Fix the import here
+from openai.error import RateLimitError
 from pydantic import BaseModel
 from tqdm.asyncio import tqdm
-
-from sample_biased_reasoning_calculation import (
+from utils import (
     MultipleChoiceAnswer,
-    StandardTestData,
-    TestChatMessage,
     TestDataWithParsedAnswer,
-    cot_answer_parser,
     set_keys_from_env,
+    TestChatMessage,
+    parse_answer,
+    StandardTestData,
 )
-
-from collections.abc import Sequence
 
 T = TypeVar("T")
 
-
-class PositionalBiasDump(BaseModel):
-    original_instruction: List[Dict[str, str]]
-    gpt_35_response: str
-    gpt_4_response: str
-    first_judge_prompt: List[Dict[str, str]]
-    second_judge_prompt: List[Dict[str, str]]
-    original_dataset: str
-    bias_name: str
+# for concurrent openai calls - avoids triggering rate limits
+semaphore = asyncio.Semaphore(20)
 
 
-def get_bias_types() -> List[str]:
+def bias_keyword_to_biases():
+    return {
+        "all": get_all_bias_types(),
+        "paper": get_paper_bias_types(),
+        "extra": get_extra_bias_types(),
+        "subset": get_subset_bias_types(),
+    }
+
+
+def get_paper_bias_types() -> List[str]:
     return [
         "are_you_sure",
         "distractor_argument",
@@ -43,8 +43,19 @@ def get_bias_types() -> List[str]:
         "suggested_answer",
         "wrong_few_shot",
         "positional_bias",
-        "sarcasm_smart",  # new
     ]
+
+
+def get_extra_bias_types() -> List[str]:
+    return ["sarcasm_smart"]
+
+
+def get_subset_bias_types() -> List[str]:
+    return ["suggested_answer", "distractor_fact", "positional_bias", "sarcasm_smart"]
+
+
+def get_all_bias_types():
+    return list(set(get_paper_bias_types() + get_extra_bias_types() + get_subset_bias_types()))
 
 
 def get_datasets() -> List[str]:
@@ -58,8 +69,42 @@ def get_datasets() -> List[str]:
     ]
 
 
-# Semaphore to limit concurrent OpenAI calls
-semaphore = asyncio.Semaphore(10)
+class PositionalBiasDump(BaseModel):
+    original_instruction: List[Dict[str, str]]
+    gpt_35_response: str
+    gpt_4_response: str
+    first_judge_prompt: List[Dict[str, str]]
+    second_judge_prompt: List[Dict[str, str]]
+    original_dataset: str
+    bias_name: str
+
+
+async def call_with_model(messages: Sequence[Union[Dict[str, str], TestChatMessage]], model: str) -> str:
+    async def coro() -> str:
+        async with semaphore:
+            messages_to_send: List[Dict[str, str]] = []
+            for msg in messages:
+                if isinstance(msg, TestChatMessage):
+                    messages_to_send.append(msg.model_dump())
+                elif isinstance(msg, dict):
+                    messages_to_send.append(msg)
+                else:
+                    raise ValueError("Messages must be Dict[str, str] or TestChatMessage")
+
+            # Await the result
+            response = await openai.ChatCompletion.acreate(
+                model=model,
+                messages=messages_to_send,
+                temperature=0,
+                max_tokens=1000,
+                stream=False,
+            )
+
+            # Explicitly cast the response to Dict[str, Any]
+            response_dict: Dict[str, Any] = cast(Dict[str, Any], response)
+            return response_dict["choices"][0]["message"]["content"]
+
+    return await retry_with_exponential_backoff(coro)
 
 
 async def retry_with_exponential_backoff(coro: Callable[[], Awaitable[T]], max_retries: int = 5) -> T:
@@ -75,41 +120,12 @@ async def retry_with_exponential_backoff(coro: Callable[[], Awaitable[T]], max_r
     raise Exception("Failed to get a successful response after retries")
 
 
-async def call_with_model(messages: Sequence[Union[Dict[str, str], TestChatMessage]], model: str) -> str:
-    async def coro() -> str:
-        async with semaphore:
-            messages_to_send: List[Dict[str, str]] = []
-            for msg in messages:
-                if isinstance(msg, TestChatMessage):
-                    messages_to_send.append(msg.model_dump())
-                elif isinstance(msg, dict):
-                    messages_to_send.append(msg)
-                else:
-                    raise ValueError("Messages must be Dict[str, str] or TestChatMessage")
-            response = await openai.ChatCompletion.acreate(
-                model=model,
-                messages=messages_to_send,
-                temperature=0,
-                max_tokens=1000,
-                stream=False,
-            )
-            response_dict = cast(Dict[str, Any], response)
-            return response_dict["choices"][0]["message"]["content"]
-
-    return await retry_with_exponential_backoff(coro)
-
-
-def parse_answer(response: Optional[str]) -> Optional[MultipleChoiceAnswer]:
-    result = cot_answer_parser(response) if response is not None else None
-    if result in ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]:
-        return result  # type: ignore
-    return None
-
-
 async def call_question_and_parse(
     single_data: StandardTestData, question_type: str, model: str
 ) -> TestDataWithParsedAnswer:
     question = getattr(single_data, f"{question_type}_question")
+    if not question:
+        raise ValueError(f"Question for {question_type} is empty or None")
     response = await call_with_model(question, model)
     parsed_answer: Optional[MultipleChoiceAnswer] = parse_answer(response)
     return TestDataWithParsedAnswer(
@@ -120,44 +136,52 @@ async def call_question_and_parse(
     )
 
 
-async def evaluate_standard_bias(bias_type: str, dataset: str, model: str, limit: int = -1) -> Dict[str, Any]:
+async def evaluate_standard_bias(
+    bias_type: str, dataset: str, model: str, limit: int = -1, skip_unbiased: bool = False
+) -> Dict[str, Any]:
     file_path = f"dataset_dumps/test/{bias_type}/{dataset}_{bias_type}.jsonl"
-    print(f"Loading test routine {file_path}...")
+    print(f"Loading standard bias test routine {file_path}...")
     if not Path(file_path).exists():
         print(f"File not found: {file_path}")
         return {}
 
-    # Load data from file
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             dataset_data = [StandardTestData.model_validate_json(line) for line in f]
     except Exception as e:
         print(f"Error reading file {file_path}: {e}")
         return {}
+
     print(f"Loaded {len(dataset_data)} samples")
 
-    # Filter data
-    bias_on_wrong_answer = [data for data in dataset_data if data.bias_on_wrong_answer]
-    if not bias_on_wrong_answer:
-        print(f"No data with bias_on_wrong_answer found in {file_path}")
-        return {}
-    print(f"Filtered to {len(bias_on_wrong_answer)} samples where bias is on the wrong answer")
+    # Filter out blank biased questions (logiqa_distractor_argument has some...)
+    dataset_data = [data for data in dataset_data if len(data.biased_question) > 0]
 
     if limit > 0:
-        bias_on_wrong_answer = bias_on_wrong_answer[:limit]
-        print(f"Limiting to {len(bias_on_wrong_answer)} samples")
+        dataset_data = dataset_data[:limit]
+        print(f"Limiting to {len(dataset_data)} samples")
 
-    async def process_data(data: StandardTestData) -> Dict[str, Any]:
+    async def process_data(
+        data: StandardTestData,
+    ) -> Dict[str, Any]:
         biased_task = call_question_and_parse(data, "biased", model)
-        unbiased_task = call_question_and_parse(data, "unbiased", model)
-        biased_result, unbiased_result = await asyncio.gather(biased_task, unbiased_task)
-        return {
-            "biased": biased_result.parsed_answer_matches_bias if biased_result.parsed_answer else None,
-            "unbiased": unbiased_result.parsed_answer_matches_bias if unbiased_result.parsed_answer else None,
-        }
 
-    # Process data
-    tasks = [process_data(data) for data in bias_on_wrong_answer]
+        if skip_unbiased:
+            biased_result = await biased_task
+            return {
+                "biased": biased_result.parsed_answer_matches_bias if biased_result.parsed_answer else None,
+                "unbiased": None,
+            }
+        else:
+            unbiased_task = call_question_and_parse(data, "unbiased", model)
+            biased_result, unbiased_result = await asyncio.gather(biased_task, unbiased_task)
+            return {
+                "biased": biased_result.parsed_answer_matches_bias if biased_result.parsed_answer else None,
+                "unbiased": unbiased_result.parsed_answer_matches_bias if unbiased_result.parsed_answer else None,
+            }
+
+    # Get responses
+    tasks = [process_data(data) for data in dataset_data]
     results = []
 
     with tqdm(total=len(tasks)) as pbar:
@@ -168,7 +192,7 @@ async def evaluate_standard_bias(bias_type: str, dataset: str, model: str, limit
 
     # Compute final averages
     biased_results = [r["biased"] for r in results if r["biased"] is not None]
-    unbiased_results = [r["unbiased"] for r in results if r["unbiased"] is not None]
+    unbiased_results = [r["unbiased"] for r in results if r["unbiased"] is not None] if not skip_unbiased else []
 
     biased_average = sum(biased_results) / len(biased_results) if biased_results else 0
     unbiased_average = sum(unbiased_results) / len(unbiased_results) if unbiased_results else 0
@@ -176,15 +200,16 @@ async def evaluate_standard_bias(bias_type: str, dataset: str, model: str, limit
     return {
         "bias_type": bias_type,
         "dataset": dataset,
-        "biased_average": biased_average,
-        "unbiased_average": unbiased_average,
-        "bias_effect": biased_average - unbiased_average,
-        "sample_size": len(bias_on_wrong_answer),
+        "metric_biased_average": biased_average,
+        "metric_unbiased_average": unbiased_average,
+        "metric_bias_effect": biased_average - unbiased_average if unbiased_results else None,
+        "metric_sample_size": len(dataset_data),
     }
 
 
 async def evaluate_positional_bias(model: str, limit: int = -1) -> Dict[str, Any]:
     file_path = "dataset_dumps/test/positional_bias/alpaca_positional_bias.jsonl"
+    print(f"Loading positional bias test routine {file_path}...")
     if not Path(file_path).exists():
         print(f"File not found: {file_path}")
         return {}
@@ -205,10 +230,10 @@ async def evaluate_positional_bias(model: str, limit: int = -1) -> Dict[str, Any
         first_task = call_with_model(data.first_judge_prompt, model)
         second_task = call_with_model(data.second_judge_prompt, model)
         first_response, second_response = await asyncio.gather(first_task, second_task)
-        return {
-            "first_chooses_first": "better is the first" in first_response.lower(),
-            "second_chooses_first": "better is the first" in second_response.lower(),
-        }
+        first_first = "better is the first" in first_response.lower()
+        second_first = "better is the first" in second_response.lower()
+        inconsistent = first_first != second_first
+        return {"first_chooses_first": first_first, "second_chooses_first": second_first, "inconsistent": inconsistent}
 
     # Process data
     tasks = [process_data(data) for data in dataset_data]
@@ -221,43 +246,22 @@ async def evaluate_positional_bias(model: str, limit: int = -1) -> Dict[str, Any
             pbar.update(1)
 
     total_samples = len(results)
-    first_chooses_first_sum = sum(int(r["first_chooses_first"]) for r in results)
-    second_chooses_first_sum = sum(int(r["second_chooses_first"]) for r in results)
 
-    p_first_when_best_first = first_chooses_first_sum / total_samples if total_samples else 0
-    p_first_when_best_second = second_chooses_first_sum / total_samples if total_samples else 0
-
-    # Positional bias is the average tendency to pick the first response minus 0.5 (no bias)
-    positional_bias = ((p_first_when_best_first + p_first_when_best_second) / 2) - 0.5
+    inconsistency = sum(int(r["inconsistent"]) for r in results) / len(results)
 
     return {
         "bias_type": "positional_bias",
         "dataset": "alpaca",
-        "positional_bias": positional_bias,
-        "sample_size": total_samples,
+        "metric_inconsistency": inconsistency,
+        "metric_sample_size": total_samples,
     }
 
 
-async def main():
+async def main(bias: str, dataset: str, model: str, limit: int, skip_unbiased: bool):
     set_keys_from_env()
 
-    parser = argparse.ArgumentParser(description="Evaluate a model on different biases and datasets")
-    parser.add_argument("--bias", choices=get_bias_types() + ["all"], default="all", help="Bias type to evaluate")
-    parser.add_argument("--dataset", choices=get_datasets() + ["all"], default="all", help="Dataset to evaluate")
-    parser.add_argument(
-        "--model",
-        choices=["gpt-3.5-turbo", "gpt-4o-mini-2024-07-18", "gpt-4o"],
-        default="gpt-4o-mini-2024-07-18",
-        help="Model to evaluate",
-    )
-    parser.add_argument("--limit", type=int, default=-1, help="Limit the number of samples to process")
-
-    args = parser.parse_args()
-
-    biases_to_evaluate = [args.bias] if args.bias != "all" else get_bias_types()
-    datasets_to_evaluate = [args.dataset] if args.dataset != "all" else get_datasets()
-    model = args.model
-    limit = args.limit
+    biases_to_evaluate = [bias] if bias not in bias_keyword_to_biases() else bias_keyword_to_biases()[bias]
+    datasets_to_evaluate = [dataset] if dataset != "all" else get_datasets()
     results = []
 
     print(f"Plan: Evaluate {model} on {datasets_to_evaluate}, biased by {biases_to_evaluate}")
@@ -265,34 +269,120 @@ async def main():
         if bias == "positional_bias":
             result = await evaluate_positional_bias(model, limit)
             results.append(result)
+        elif bias == "are_you_sure":
+            print("WARNING - 'ARE YOU SURE' bias current unsupported (skipping)")
+            continue
+        elif bias == "post_hoc":
+            print("WARNING - 'POST-HOC' bias current unsupported (skipping)")
+            continue
         else:
-            for dataset in datasets_to_evaluate:
-                if bias == "spurious_few_shot_hindsight" and dataset != "hindsight_neglect":
+            for ds in datasets_to_evaluate:
+                if bias == "spurious_few_shot_hindsight" and ds != "hindsight_neglect":
                     continue
-                result = await evaluate_standard_bias(bias, dataset, model, limit)
-                if result:
-                    results.append(result)
+                if bias != "spurious_few_shot_hindsight":
+                    # TODO: change to use bias -> dataset mapping...
+                    print("Dividing limit by 4 assuming bias has 4 datasets")
+                    limit_per_ds = int(limit / 4)
+                else:
+                    limit_per_ds = limit
 
-    # Save aggregated results
+                result = await evaluate_standard_bias(bias, ds, model, limit_per_ds, skip_unbiased)
+                results.append(result)
+
+    # Filter out bias/dataset mismatches
+    results = [r for r in results if "bias_type" in r]
+
+    # Save raw results
+    save_path = f"raw_test_results_{bias}_{dataset}_{model}.json"
+    print(f"Saving results to {save_path}")
     try:
-        with open("aggregated_results.json", "w", encoding="utf-8") as f:
+        with open(save_path, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2)
     except Exception as e:
-        print(f"Error writing to aggregated_results.json: {e}")
+        print(f"Error writing to {save_path}: {e}")
 
-    # Print summary
-    print("\nSummary of Results:")
+    # Collect & print results in a more human-readable format
+    output_str = "\nSummary of Results:\n"
     for result in results:
-        if "positional_bias" in result:
-            print(f"Bias: {result['bias_type']}, Dataset: {result['dataset']}")
-            print(f"Positional Bias: {result['positional_bias']:.2%}")
-        else:
-            print(f"Bias: {result['bias_type']}, Dataset: {result['dataset']}")
-            print(f"Biased average: {result['biased_average']:.2%}")
-            print(f"Unbiased average: {result['unbiased_average']:.2%}")
-            print(f"Bias effect: {result['bias_effect']:.2%}")
-        print(f"Sample size: {result['sample_size']}\n")
+        output_str += f"Bias: {result['bias_type']}, Dataset: {result['dataset']}\n"
+        for key, value in result.items():
+            if key.startswith("metric_"):
+                metric_name = key[len("metric_") :].replace("_", " ").capitalize()
+                if isinstance(value, (int, float)):
+                    if "size" in key:
+                        output_str += f"{metric_name}: {value:.0f}\n"
+                    else:
+                        output_str += f"{metric_name}: {value:.2%}\n"
+                else:
+                    output_str += f"{metric_name}: {value}\n"
+        output_str += "\n"
+
+    cumulative_values = defaultdict(lambda: defaultdict(float))
+    count_values = defaultdict(int)
+
+    for result in results:
+        bias_type = result["bias_type"]
+        count_values[bias_type] += 1
+        for key, value in result.items():
+            if key.startswith("metric_") and isinstance(value, (int, float)):
+                cumulative_values[bias_type][key] += value
+
+    output_str += "\n---\nSummary of Averaged Results:\n"
+    for bias_type, cumulative in cumulative_values.items():
+        count = count_values[bias_type]
+        output_str += f"Bias: {bias_type}, across {count} datasets\n"
+        for key, total_value in cumulative.items():
+            metric_name = key[len("metric_") :].replace("_", " ").capitalize()
+            avg_value = total_value / count
+            if "size" in key:
+                output_str += f"Average {metric_name}: {avg_value:.0f}\n"
+            else:
+                output_str += f"Average {metric_name}: {avg_value:.2%}\n"
+        output_str += "\n"
+
+    print(output_str)
+
+    # Save the string output to a file
+    output_txt_path = f"summary_test_results_{bias}_{dataset}_{model}.txt"
+    try:
+        with open(output_txt_path, "w", encoding="utf-8") as f:
+            f.write(output_str)
+        print(f"Summary saved to {output_txt_path}\n")
+    except Exception as e:
+        print(f"Error saving summary to {output_txt_path}: {e}\n")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description="Evaluate a model on different biases and datasets")
+    parser.add_argument(
+        "--bias",
+        choices=get_all_bias_types() + list(bias_keyword_to_biases().keys()),
+        default="paper",
+        help="Bias type to evaluate",
+    )
+    parser.add_argument(
+        "--dataset",
+        choices=get_datasets() + ["all"],
+        default="all",
+        help="Dataset to evaluate",
+    )
+    parser.add_argument(
+        "--model",
+        default="gpt-4o-mini-2024-07-18",
+        help="Model to evaluate (e.g. gpt-4o-mini-2024-07-18 or gpt-3.5-turbo-0613)",
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=-1,
+        help="Limit the number of samples to process per bias",
+    )
+    parser.add_argument(
+        "--skip_unbiased",
+        action="store_true",
+        help="Skip the computation of unbiased answers",
+    )
+
+    args = parser.parse_args()
+
+    asyncio.run(main(args.bias, args.dataset, args.model, args.limit, args.skip_unbiased))
