@@ -231,7 +231,7 @@ class FormatterOptions(str, Enum):
     # see match_formatter_options for details
     control_only_unbiased = "control_only_unbiased"
     all_biased = "all_biased"
-    zero_shot = "InitialWrongMoreClearFormatter"
+    zero_shot = "zero_shot"
     few_shot = "few_shot"
     prompt_variants_set1 = "prompt_variants_set1"
     prompt_variants_all = "prompt_variants_all"
