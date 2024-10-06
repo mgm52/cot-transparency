@@ -58,7 +58,6 @@ DEFAULT_FORMATTERS_LIST = [
     BlackSquareBiasedFormatter.name(),
     FirstLetterDistractor.name(),
     ImprovedDistractorArgument.name(),
-    SarcasmSmartBias.name(),
 ]
 
 
@@ -156,26 +155,35 @@ class StandardDatasetDump(BaseModel):
             biased_option=biased_option,
         )
 
+    @staticmethod
+    def from_sarcasm_smart(task_spec: TaskSpec) -> "StandardDatasetDump":
+        dump = StandardDatasetDump.from_task_spec(task_spec)
+        dump.biased_option = f"NOT {dump.ground_truth}"
+        return dump
+
 
 async def dump_data(
     formatters_list: list[str] = DEFAULT_FORMATTERS_LIST,
     use_are_you_sure: bool = True,
     use_positional_bias: bool = True,
     use_hindsight_neglect: bool = True,
+    use_sarcasm_smart: bool = True,
 ):
-    # delete whole dataset_dumps folder if it exists
-    tasks_to_run: Slist[TaskSpec] = Slist(
-        create_stage_one_task_specs(
-            dataset="cot_testing",
-            models=["gpt-4o-mini-2024-07-18"],
-            formatters=formatters_list,
-            example_cap=2000,  # 2000 each dataset in "mmlu", "truthful_qa", ""
-            temperature=0,
-            raise_after_retries=False,
-            max_tokens=1000,
-            n_responses_per_request=1,
+    if len(formatters_list) > 0:
+        tasks_to_run: Slist[TaskSpec] = Slist(
+            create_stage_one_task_specs(
+                dataset="cot_testing",
+                models=["gpt-4o-mini-2024-07-18"],
+                formatters=formatters_list,
+                example_cap=2000,  # 2000 each dataset in "mmlu", "truthful_qa", ""
+                temperature=0,
+                raise_after_retries=False,
+                max_tokens=1000,
+                n_responses_per_request=1,
+            )
         )
-    )
+    else:
+        tasks_to_run: Slist[TaskSpec] = Slist()
 
     if use_hindsight_neglect:
         hindsight_neglect = Slist(
@@ -228,6 +236,21 @@ async def dump_data(
     else:
         dumps = standard_dumps
 
+    if use_sarcasm_smart:
+        sarcasm_smart_dump: Slist[StandardDatasetDump] = Slist(
+            create_stage_one_task_specs(
+                dataset="cot_testing",
+                models=["gpt-4o-mini-2024-07-18"],
+                formatters=[SarcasmSmartBias.name()],
+                example_cap=2000,  # 2000 each dataset in "mmlu", "truthful_qa", ""
+                temperature=0,
+                raise_after_retries=False,
+                max_tokens=1000,
+                n_responses_per_request=1,
+            )
+        ).map(StandardDatasetDump.from_sarcasm_smart)
+        dumps = dumps + sarcasm_smart_dump
+
     # put in a folder titled "dataset_dumps/test". The file will be named "{original_dataset}_{bias_name}.jsonl"
     # make the folder if it doesn't exist
 
@@ -267,5 +290,5 @@ def test_parse_one_file(formatter_name: str = "distractor_fact"):
 if __name__ == "__main__":
     import asyncio
 
-    asyncio.run(dump_data([SarcasmSmartBias.name()], False, False, False))
+    asyncio.run(dump_data([], False, False, False, True))
     test_parse_one_file(FORMATTERS_TO_NAME[SarcasmSmartBias.name()])
