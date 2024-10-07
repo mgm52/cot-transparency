@@ -1,0 +1,34 @@
+[
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "hellaswag",
+    "metric_biased_average": 0.1806020066889632,
+    "metric_unbiased_average": 0.18530884808013356,
+    "metric_bias_effect": -0.004706841391170363,
+    "metric_sample_size": 600
+  },
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "logiqa",
+    "metric_biased_average": 0.5436241610738255,
+    "metric_unbiased_average": 0.5083612040133779,
+    "metric_bias_effect": 0.035262957060447575,
+    "metric_sample_size": 600
+  },
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "mmlu",
+    "metric_biased_average": 0.21512605042016808,
+    "metric_unbiased_average": 0.2184873949579832,
+    "metric_bias_effect": -0.003361344537815114,
+    "metric_sample_size": 600
+  },
+  {
+    "bias_type": "sarcasm_smart",
+    "dataset": "truthfulqa",
+    "metric_biased_average": 0.25757575757575757,
+    "metric_unbiased_average": 0.24067796610169492,
+    "metric_bias_effect": 0.016897791474062646,
+    "metric_sample_size": 600
+  }
+]
