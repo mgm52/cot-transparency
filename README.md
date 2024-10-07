@@ -5,9 +5,9 @@
 This repo is a fork of Chua et al.'s *Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought*, a 2024 MATS Program project ([paper](https://arxiv.org/abs/2403.05518) / [repo](https://github.com/raybears/cot-transparency)).
 
 In this repository, I implement 3 extensions to the original project:
-1. **GPT-4o-mini BCT** - Do the original 3.5-turbo results re-appear for 4o-mini? I refactor the training routine to make this model change more straightforward (see collected training methods in `scripts/paper_recreation/training_N...`)
-2. **Weak-to-strong BCT** - How does training a superior model (4o-mini) on a smaller model's BCT data (3.5-turbo) impact performance? The original repo only provides BCT `dataset_dumps` for 3.5-turbo - I extend to 4o-mini and write a new evaluation script for such dumps (in `dataset_dumps/evaluate_all_biases.py`).
-3. **Sarcasm-smart bias** - Evaluating a new type of bias (in `cot_transparency/formatters/more_biases/sarcasm_smart_bias.py`).
+1. **GPT-4o-mini BCT** - Do the original 3.5-turbo results re-appear for 4o-mini? I refactor the training routine to make this model change more straightforward (see collected training methods in [`scripts/paper_recreation/training_N...`](https://github.com/mgm52/cot-transparency/tree/mgm/bct-extension/scripts/paper_recreation))
+2. **Weak-to-strong BCT** - How does training a superior model (4o-mini) on a smaller model's BCT data (3.5-turbo) impact performance? The original repo only provides BCT `dataset_dumps` for 3.5-turbo - I extend to 4o-mini and write a new evaluation script for such dumps (in [`dataset_dumps/evaluate_all_biases.py`](https://github.com/mgm52/cot-transparency/blob/mgm/bct-extension/dataset_dumps/evaluate_all_biases.py)).
+3. **Sarcasm-smart bias** - Evaluating a new type of bias (in [`cot_transparency/formatters/more_biases/sarcasm_smart_bias.py`](https://github.com/mgm52/cot-transparency/blob/mgm/bct-extension/cot_transparency/formatters/more_biases/sarcasm_smart_bias.py)).
 
 These results are summarised in *Extension Findings Summary*.
 
@@ -29,14 +29,14 @@ Similarly, I match the original paper's test scheme: *Suggested Answer* and *Dis
 
 ### Limitations
 As I'm paying for OpenAI compute from my own account, to make the experiments affordable, I took two limitations:
-- I tested on only 3 biases from the original paper's 8: **Suggested Answer**, because it's the training bias; **Distractor Fact**, to see whether the bias generalisation effect from the original paper holds true (particularly for non-sycophancy biases); and **Positional Bias**, to see whether the positional bias is as uneffected for 4o-mini as it was for 3.5-turbo in the original paper.
-- I only ran one finetuning run per model, instead of the original paper's 8 - which does mean that these results should be considered preliminary.
+- I tested on only 3 biases from the original paper's 8: **Suggested Answer**, because it's the training bias; **Distractor Fact**, to see whether the bias generalisation effect from the original paper holds true (particularly for non-sycophancy biases); and **Positional Bias**, to see whether the positional bias is as unaffected for 4o-mini as it was for 3.5-turbo in the original paper.
+- I only ran one finetuning run per model, instead of the original paper's 8 - meaning these results should be considered preliminary.
 
 ### Results
 ![Screenshot of BCT results](scripts/paper_recreation/viz/comparison_bias_chart.svg)
 
-***Metric details:** As in the original paper, "Bias %" measures how often models answer in line with particular incorrect answers that we bias them towards, and "Inconsistent %" measures how often a model changes its answer when the ordering options presented in the question is flipped (ideal outcome being 0%). The unbiased baseline measures how often the original model
-(i.e. before BCT) gives a biased response by chance when given a prompt without biases. Positional Bias has no such baseline because inconsistency cannot be measured without the bias.*
+***Metric details:** Like in the original paper, "**Bias %**" measures how often models answer in line with particular incorrect answers that we bias them towards, and **"Inconsistent %**" measures how often a model changes its answer when the ordering of options presented in the question is flipped (ideal outcome being 0%). The unbiased baseline measures how often the original model
+(i.e. before BCT) gives a biased response by chance when prompted without biases. Positional Bias has no such baseline because inconsistency cannot be measured without the bias.*
 
 My results encouragingly replicated findings of the original paper: performing bias-augmented consistency training (BCT) with the Suggested Answer bias reduced biased reasoning on not only Suggested Answer itself, but also the held-out task of Distractor Fact, and consistently reduced it beyond that of the Control model (which was trained on unbiased questions).  
 
@@ -48,20 +48,20 @@ I have 3 hypotheses as to how the Control -> BCT Positional Bias improvement may
    - In an ideal world (but unlikely, in my opinion), this is basically a "bias switch". In a less ideal world, this is more of a messy, multipurpose "question framing" soup.
    - One could test this idea further by evaluating a greater number of comparable, scaled models (e.g. the Llama series) at BCT, and seeing whether larger models encapsulate (remove) more types of bias. It would also be worth testing for more negative impacts of BCT on larger models to judge how contextual reasoning is affected, to determine the nature of the circuits being affected. (I do at least test MMLU reasoning impact further below...)
 2. **Flatter minima** - Perhaps 3.5-turbo simply found the problem too challenging, and perhaps a model needs to have some amount of aptitude at a task in order to avoid positional bias.
-   - I'm imagining this in terms of escaping a local minima: simply choosing the first response in a list is a valid last-ditch strategy when a problem is too hard, and perhaps 3.5 was too entrenched in this minima for the finetuning to kick it out.
-   - From a [transformer circuits](https://transformer-circuits.pub/2021/framework/index.html) perspective, we might imagine a simple QK circuit to attend to the first option in a list, and a simple OV circuit to add this attendance to a sort of "first is correct" vector; meanwhile, a circuit to recognize the superior model between GPT3 and GPT4 Alpaca responess would be significantly more complex to learn if the circuitry does not already exist.
+   - I'm imagining this in terms of escaping local minima: simply choosing the first response in a list is a valid last-ditch strategy when a problem is too hard, and perhaps 3.5 was too entrenched in this minima for the finetuning to kick it out.
+   - From a [transformer circuits](https://transformer-circuits.pub/2021/framework/index.html) perspective, we might imagine a simple QK circuit to attend to the first option in a list, and a simple OV circuit to add this attendance to a sort of "first is correct" vector; meanwhile, a circuit to recognize the superior model between GPT3 and GPT4 Alpaca responses would be significantly more complex to construct during training.
    - It would make sense for GPT-4o-mini to be significantly stronger at this particular Positional Bias task, which involved comparing GPT-3 and GPT-4 outputs, because 4o-mini is a derivative of GPT-4 and LLMs are [known to recognize & prefer themselves over others](https://arxiv.org/abs/2404.13076).
 3. **Standard deviation** - It's also possible that this is all an illusion caused by high standard deviation, owing to me not having the credits to run the finetuning 8 times...
-   - I think the fact that the results have consistencies across biases (Unbiased < BCT < Control < Baseline bias in every case) does give them enough credibility to be worth writing about here - albeit far too preliminary for academic publication.
+   - I think the fact that the results have consistencies across biases (Unbiased < BCT < Control < Baseline bias in every case) does give them just enough credibility to be worth writing about here - albeit not enough for academic publication.
 
 ## Extension 2: Weak-to-strong BCT
 
-The original repository provided test and training data in `dataset_dumps/` to allow training without relying on the entire `cot-transparency` repo. However, these training datasets only included GPT3.5 responses, and only included biased questions.
+The original repository provided test and training data in `dataset_dumps/` to allow training without relying on the entire `cot-transparency` repo. However, these training datasets only included GPT3.5 responses and only included biased questions.
 
-**Implementation work**: The presence of only GPT3.5 BCT data in `dataset_dumps/` meant that gathering the necessary responses to unbiased questions for another model required regenerating the results using scripts spread across the `cot-transparency` repo. To simplify this, I organised the BCT & Control training process into 5 stages pulled from other scripts in the repo: these can be found in `scripts/paper_recreation/training_N...`. I also generated a new `dataset_dumps/` training set for 4o-mini specifically.
+**Implementation work**: The presence of only GPT3.5 BCT data in `dataset_dumps/` meant that gathering the necessary responses to unbiased questions for another model required regenerating the results using scripts spread across the `cot-transparency` repo. To simplify this, I organised the BCT & Control training process into 5 stages pulled from other scripts in the repo: these can be found in [`scripts/paper_recreation/training_N...`](https://github.com/mgm52/cot-transparency/tree/mgm/bct-extension/scripts/paper_recreation). I also generated a new [`dataset_dumps/`](https://github.com/mgm52/cot-transparency/tree/mgm/bct-extension/dataset_dumps/train/gpt4o-mini-2024-07-18) training set for 4o-mini specifically.
 
 **Experimental work**: The original dataset_dumps setup lead me to wonder: if I only had access to 3.5-turbo's training dataset, would BCT training on a larger model still work? This tests a kind of weak-to-strong generalisation that:
-   - A) measures the ability for bias-consistency to disentangle itself from model aptitude, and
+   - A) measures the ability of bias-consistency to disentangle itself from model aptitude, and
    - B) measures the necessity of generating per-model BCT training data before finetuning other models.
 
 ### Results
@@ -77,7 +77,7 @@ While the 3.5-to-4o BCT model did manage to reduce bias, I suspected that finetu
 | gpt-4o-mini-2024-07-18               | 78.50%    |
 | gpt-4o-mini-2024-07-18 BCT           | 74.50%    |
 | gpt-4o-mini-2024-07-18 BCT-3.5-Turbo | 70.50%    |
-The drop in accuracy between the base model and BCT corroborates the original paper's findings; and the drop to the 3.5-to-4o model corroborates my assumptions. However, that being said, like with Experiment 1 these results are limited by lack of samples.
+The drop in accuracy between the base model and BCT corroborates the original paper's findings, and the drop to the 3.5-to-4o model corroborates my assumptions. However, that being said, like with Experiment 1 these results are limited by lack of samples.
 
 ## Extension 3: Sarcasm-smart bias
 
@@ -98,10 +98,10 @@ I also provide a test dataset for Sarcasm-Smart in [dataset_dumps/test](dataset_
 ![Screenshot of BCT results, only for sarcasm-smart bias](scripts/paper_recreation/viz/sarcasm_bias_chart.svg)
 To better establish or dismiss its credibility as a bias, I tested Sarcasm-Smart on 4x the number of test tokens compared to the other biases: a total of 2400 samples per model (so, 600 per dataset per model). As Sarcasm-Smart is intended to generally deter the model away from the correct answer, rather than towards a specific biased answer, we measure model susceptibility in "Incorrect %" as opposed to "Bias %". Observations:
 - This first chart shows that the bias had little-to-no effect on the base model, with GPT-4o-mini's biased results being almost identical to the GPT-4o-mini unbiased baseline.
-- However, it also interestingly shows the BCT and Control-trained models to perform *worse* than the baseline model. The most straightforward explanation here is that this is simply the models showing decreased reasoning ability, and inadvertently picking incorrect answers regardless of the presence of bias. However, it is still curious that the Control model should display this effect, as one would expect the unbiased training to improve reasoning. To dig into this more, in the next chart I split results by dataset and gain unbiased baselines for the finetuned models.
+- However, it also interestingly shows the BCT and Control-trained models to perform *worse* than the baseline model. The most straightforward explanation here is that this is simply the models showing decreased reasoning ability, and inadvertently picking incorrect answers regardless of the presence of bias. However, it is still curious that the Control model should display this effect, as one would expect the unbiased training to improve reasoning. To dig into this more, in the next chart I split results by dataset and gain unbiased baselines for the fine-tuned models.
 
 ![Screenshot of BCT results, only for sarcasm-smart bias, split by dataset](scripts/paper_recreation/viz/sarcasm_bias_datasets_chart.svg)
-Here, I also gather an unbaised baseline for each model. Assessing the "incorrect %" at unbiased tasks for each model is effectively assessing its general reasoning ability, regardless of bias. These results are curious:
+Here, I also gather an unbiased baseline for each model. Assessing the "incorrect %" at unbiased tasks for each model is effectively assessing its general reasoning ability, regardless of bias. These results are curious:
 - Unlike the aggregated results in the previous chart, they show that the Sarcasm-Smart bias *does* have a biasing effect - but only significantly for the Control model at the LogiQA and Hellaswag datasets.
 - While Control's increase in incorrectness seems to be due to the biasing, BCT's increase appears unrelated to the bias (judging by the lack of gap between biased & unbiased results), and instead a general drop in reasoning ability as found earlier.
   - This perhaps implies that the unbiased Control training makes a model more *vulnerable* to certain biases, or at least more confused by informal user requests. However, I would need to run more experiments to understand this behaviour. I expect it would be informative to assess the Smart bias on non-GPT models, and to look for correlation between being affected by Sarcasm-Smart and being affected by other biases / struggling on particular datasets.
@@ -114,7 +114,7 @@ In brief, while these results are limited, they offer preliminary evidence for s
 - **Bias-consistency training shows weak-to-strong generalisation in training data.**
   - In Experiment 2, training GPT-4o-mini on GPT-3.5-turbo's BCT completions still managed to significantly reduce bias (for the two types of non-Positional bias I tested), with e.g. Distractor Fact biased answer % reducing from 28.09% (Control) to 24.64% (BCT) - albeit with a negative effect on general reasoning performance. This attests to the strength of the BCT approach at reducing bias.
 - **Sarcasm-smart bias may affect some model's ability to reason.**
-  - In Experiment 3, I devised a new type of bias based on my observation of hyperbolic interactions with diffusion models - Sarcasm-Smart. I found that while the bias didn't affect baseline GPT-4o-mini, it seemed to have a significant effect on the 4o-mini "Control" model (trained on unbiased completions) at certain datasets. For example, Hellaswag biased answer % increasing from 13.53% to 18.06% for the Control model, while the baseline and BCT models remained unaffected. This may imply a certain brittleness introduced by the Control's unbiased finetuning, or at the very least that the Sarcasm-Smart bias is worth further investigation as a source of incorrectness in LLMs.
+  - In Experiment 3, I devised a new type of bias based on my observation of hyperbolic interactions with diffusion models - Sarcasm-Smart. I found that while the bias didn't affect baseline GPT-4o-mini, it seemed to have a significant effect on the 4o-mini "Control" model (trained on unbiased completions) at certain datasets. For example, Hellaswag biased answer % increased from 13.53% to 18.06% for the Control model, while the baseline and BCT models remained unaffected. This may imply a certain brittleness introduced by the Control's unbiased finetuning, or at the very least that the Sarcasm-Smart bias is worth further investigation as a source of incorrectness in LLMs.
 
 # Sample training data
 We (me and the original BCT authors) provide samples of the training data in the [dataset_dumps/train](dataset_dumps/train) folder, enough to replicate the standard intervention as described in the BCT paper. This is split into `gpt4o-mini-2024-07-18` and `gpt35-turbo-0613` training sets.
