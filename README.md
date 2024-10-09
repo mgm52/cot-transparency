@@ -33,7 +33,7 @@ Similarly, I matched the original paper's test scheme: **Suggested Answer** and 
 
 To make the experiments affordable, given that I was paying for OpenAI compute from my own account, I applied two limitations:
 
-- I tested only 3 biases from the original paper's 8: **Suggested Answer**, as it was the training bias; **Distractor Fact**, to assess the generalization effect seen in the original paper (particularly for non-sycophancy biases); and **Positional Bias**, to see whether the positional bias was as unaffected for 4o-mini as it was for 3.5-turbo in the original paper.
+- I tested only 3 biases from the original paper's 9: **Suggested Answer**, as it was the training bias; **Distractor Fact**, to assess the generalization effect seen in the original paper (particularly for non-sycophancy biases); and **Positional Bias**, to see whether the positional bias was as unaffected for 4o-mini as it was for 3.5-turbo in the original paper.
 - I only ran one fine-tuning run per model instead of the original paper's 8 runs—meaning these results should be considered preliminary.
 
 ### Results
@@ -156,6 +156,66 @@ In brief, while these results are limited, they offer preliminary evidence for s
 
 ---
 
+## Original Repo Implementation Notes
+
+These are some scrappy informal notes I took on the original repo while I was getting to grips with it. I hope these are helpful for anyone looking to work with it in the future!
+
+### Key classes:
+- **Intervention**: anti-biaser
+- **StandardDatasetDump**: one original q + biased formatted q + unbiased formatted q + GT answer; in `str` format
+- **BaseTaskSpec**: one question; in `Sequence[ChatMessage]` format
+- **BaseTaskOutput**: one question + model answer + is_correct; in `Sequence[ChatMessage]` format
+- **NFormatsPerQuestionSampler**: randomly applies `StageOneFormatters` to the `BaseTaskSpecs` contained in `BaseTaskOutputs`
+    - Effectively, it generates our training dataset: biased questions and their ideal, unbiased responses
+
+### Training:
+- `data/training_cots/...`
+  - **UNBIASED** prompts and **UNBIASED** model output, as `TaskOutputs`
+  - `gpt_35_turbo_unfiltered.jsonl` contains all examples, including ones where gpt35 failed
+- `data/instructions/...`
+  - Alpaca GPT-3.5 completions
+- `dataset_dumps/train/...`
+  - Biased prompts, unbiased GPT-3.5 output
+- `scripts/training_formatters.py`
+  - Groups of `StageOneFormatters`
+  - `FORMATTERS_TO_PAPER_NAME` is particularly useful for finding formatters
+- `scripts/few_shots_loading.py`
+  - Points towards which unbiased `data/training_cots` results to use for fine-tuning various models
+- `scripts/evaluate_alignment_tax/create_gpt_35_instruction_dataset.py`
+  - Dumps ALPACA prompts and responses to `data/instructions/...`
+- `scripts/unfiltered_data_experiments/dump_unfiltered_data.py`
+  - Dumps **UNBIASED** prompts and **UNBIASED** model output, as `TaskOutputs`, to `data/training_cots/...`
+- `scripts/finetune_cot.py`
+  - `fine_tune_with_bias_augmentation()`
+      - Loads unfiltered (i.e. model may be right or wrong) `TaskOutputs` from `data/training_cots/...` according to `scripts/few_shots_loading.py`
+      - Applies bias using sampler: `FormatSampler = NFormatsPerQuestionSampler` - this applies bias using a random selection of formatters, which can be "Suggested Answer"-esque
+      - Saves the pairs of **BIASED** prompt & **UNBIASED** response into `dataset_dumps/train/...`
+      - Then fine-tunes and returns the new model ID
+- `scripts/finetune_with_instruct_only.py`
+  - Control model training...
+
+### General-purpose:
+- `scripts/stage_one.py`
+  - `create_stage_one_task_specs()` turns tasks into `BaseTaskSpecs`, ready to put into a model via `run_with_caching()` in `tasks.py`
+  - Contains code to convert unbiased question into biased question
+  - `main()` calls `create_stage_one_task_specs()` followed by `run_with_caching()` to save results straight to `experiments/`
+
+### Testing:
+- `dataset_dumps/test/...`
+  - Biased prompts, unbiased prompts, GT, BT
+- `data_models/data/__init__.py`
+  - Collections of tasks (test datasets) that can be plugged into `stage_one`
+  - `TASK_LIST["cot_testing"] == COT_TESTING_TASKS` is the collection used for tests in the paper
+- `experiments/dummy_run/...`
+  - Dataset of biased tasks AND model results on them
+- `scripts/dump_datasets_for_release.py`
+  - `FORMATTERS_TO_DUMP` contains the 6 out of 9 biases that have formatters
+  - Uses `stage_one.py` to apply 9 biases over test data, THEN saves to jsonl in `dataset_dumps`
+- `cot_transparency/tasks.py`
+  - `run_with_caching()` runs a collection of tasks on a model, saving each response, ready for analysis.
+
+--- 
+ 
 ## Sample Training Data
 
 We (myself and the original BCT authors) provide samples of the training data in the [dataset\_dumps/train](dataset_dumps/train) folder, enough to replicate the standard intervention as described in the BCT paper. This is split into `gpt4o-mini-2024-07-18` and `gpt35-turbo-0613` training sets.
