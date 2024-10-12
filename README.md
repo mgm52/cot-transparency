@@ -50,8 +50,9 @@ I have three hypotheses to explain the Control -> BCT Positional Bias improvemen
 
 1. **Higher-level Bias Representation**: Perhaps 4o-mini has a higher-level, more generalized understanding of bias, such that the gradient updates from fine-tuning on Suggested Answer also affect a deeper "reasoning free from external framing" circuit within the model.
 
-   - If true, this could imply the existence of a bias generalization scaling law—i.e., larger models may have a greater ability to recognize bias, or at least bias-like factors, making it *easier* to reduce unknown biases in larger models compared to smaller ones.
+   - If true, this could imply the existence of a bias generalization scaling law—i.e., more capable models may have a greater ability to recognize bias, or at least bias-like factors, making it *easier* to reduce unknown biases in larger/better-trained models compared to smaller/worse-trained ones.
    - One could further test this by evaluating a greater number of comparable, scaled models (e.g., the Llama series) with BCT to see whether larger models encapsulate (and remove) more types of bias. It would also be worth testing for negative impacts of BCT on larger models to determine how contextual reasoning is affected.
+   - This finding may be complementary to Kissane et al.'s observation that [a less-capable model mediates refusal with more directions](https://www.lesswrong.com/posts/YWo2cKJgL7Lg8xWjj/base-llms-refuse-too#:~:text=This%20might%20suggest%20that%20refusal%20in%20the%20LLaMA%201%207B%20base%20model%20is%20not%20mediated%20by%20a%20single%20direction.).
 
 2. **Flatter Minima**: Perhaps GPT-3.5-turbo found the problem too challenging, and a model may need a certain level of aptitude to avoid positional bias.
 
